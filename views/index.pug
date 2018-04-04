@@ -1,0 +1,703 @@
+extends layout
+
+block content
+ html
+  body
+    .lala-header-area 
+      .container 
+        .row
+          .col-lg-6.col-md-5
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true")  
+            .lala-header-menu
+              ul
+                li
+                  a(href="#about") about 
+                li
+                  a(href="#lala-feture") services
+                li
+                  a(href="#team") team 
+                li
+                  a(href="/media") media
+                li 
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li> 
+        // End row
+      // End container
+    // End lala-header-area
+    section#lala-home.lala-banner-area(style="background-image: url(images/banner-plain.png);")
+      .lala--bannerllax.jarallax(style="background-image: url(images/banner-texture.png);")
+      #container.container-fluid.mn
+        .row.info
+          .col-lg-6.col-md-7.d-flex.align-items-center.height-80vh
+            .lala-banner-content
+              h1 Global Wallet, Local Partnerships
+              h5 Gearing towards a decentralised financial ecosystem
+              h4.ml15
+                span.word SEND  |&nbsp;
+                span.word SPEND  |&nbsp;
+                span.word LEND
+              // <a class="lala-default-btn" href="#">download now</a>
+          .col-lg-6.col-md-5.mobile-hidden.d-flex.align-items-center.justify-content-end.height-100vh
+            .lala-banner-img.vi 
+              //<iframe class="nwst" src="https://www.youtube.com/embed/fvhUQTbNhTI?rel=0&autoplay=1" width="560" height="614" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              img(src="images/banner-img.png" alt="")
+        // End row
+      // End container
+      .wave-start
+        svg#header-layer1.wave-1(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1350.75 185.1" xml:space="preserve")
+          path#header-line1(d="M1350,0H-.5V182.6S138.1,74.7,330.1,34.9c42.1-8.7,238.6-45.2,458.7,39.7,345.2,133.2,561.1,42.3,561.1,42.3Z")
+          defs
+        svg#header-layer2.wave-2(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1350.75 185.1" xml:space="preserve")
+          path#header-line2(d="M1350.25,1.25H-.25l.1,116.9s283.4,90,553.4-41c194-85,435-50,490.17-35.69,205.83,51.06,306.83,142.36,306.83,142.36Z")
+          defs
+        svg#header-layer3.wave-3(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1350.75 185.1" xml:space="preserve")
+          path#header-line3(d="M1350,0H-.5V182.6S28.1,104.7,220.1,64.9c15.43-2.68,150.56-35.54,368.7,49.7,345.2,133.2,761.1,2.3,761.1,2.3Z")
+          defs
+        svg#header-layer4.wave-4(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1350.75 185.1" xml:space="preserve")
+          path#header-line4(d="M1350,0H1.5V117.6s416.88,129.33,757.38-1.67c270.6-95,362.46-49,400.21-43.33,152,33.33,190.82,109.3,190.82,109.3Z")
+          defs
+    // End lala-banner-area
+    .container-fluid.mn  
+      .row
+          .col-md-12
+            .lala-heding-title
+              //h2 LALA World Partners
+              //.clear-fix
+              //h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci <br> 
+                 didunt ut labore et dolore
+            #top-slider.owl-carousel.owl-theme
+              .item
+                .client-thumb
+                  a(href="https://www.disruptordaily.com/disruption-blockchain-part-52-sankalp-shangari-lala-world/" target="_blank") 
+                    img.img-responsive(src="images/press/logo-1.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://e27.co/lala-world-raises-us2m-in-series-a-20171031/" target="_blank")
+                    img.img-responsive(src="images/press/logo-21.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.huffingtonpost.com/entry/ways-to-combat-the-increasing-international-refugee_us_5a0d2b36e4b023a796fed409" target="_blank")
+                    img.img-responsive(src="images/press/logo-3.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://blockchainnews.co.kr/news/view.php?idx=262" target="_blank")
+                    img.img-responsive(src="images/press/logo-4.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://blockonomi.com/lala-world/" target="_blank")
+                    img.img-responsive(src="images/press/logo-5.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.techbullion.com/emerging-blockchain-based-financial-platform-banking-unbanked/" target="_blank")
+                    img.img-responsive(src="images/press/logo-6.png" alt="Client") 
+              .item
+                .client-thumb
+                  a(href="https://www.chipin.com/lala-world-blockchain-startup-ngo/" target="_blank")
+                    img.img-responsive(src="images/press/logo-71.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.thriveglobal.com/stories/17514-among-great-suffering-i-realized-the-importance-of-gratitude" target="_blank")
+                    img.img-responsive(src="images/press/logo-8.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://www.mdgmonitor.org/lala-worlds-blockchain-network-for-undocumented-refugees/" target="_blank")
+                    img.img-responsive(src="images/press/logo-9.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.dealstreetasia.com/stories/singapore-blockchain-solutions-firm-lala-world-85317/" target="_blank")
+                    img.img-responsive(src="images/press/logo-10.png" alt="Client") 
+    #wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               span.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               span.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               span.fa.fa-telegram.icon-padd
+               span.tele.count 7,916
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               span.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               span.fa.fa-medium.icon-padd
+               span#medium.count 186
+    #about.lala-about-section-area
+    .lala-about-bg
+      .container
+        .row
+          .col-lg-12.col-md-12.col-12
+            .lala-about-heading
+              h2 ABOUT LALA WORLD
+              .clear-fix
+            .lala-about-content
+              p LALA World is building a Global Digital Decentralized Financial Ecosystem to support the inclusion of the Unbanked, Undocumented, Micro-entrepreneurs, Students and everyone else.
+              p The LALA ECOSYSTEM enabled by LALA Wallet, is a single sign on platform revolving around their issues and problems like employment, Digital Identity, healthcare, community build up, government and NGO partnerships by capitalizing the Blockchain revolution to bridge the gap between cash and the digital world.
+              //h2 ABOUT LALA WORLD
+              //h3 Global Wallet, Local Partnerships
+              //p
+               | LALA World is building a Global Digital Decentralized Financial Ecosystem to support the inclusion of the Unbanked, Undocumented, Micro-entrepreneurs, Students and everyone else.
+              //p  
+               | The LALA ECOSYSTEM enabled by LALA Wallet, is a single sign on platform revolving around their issues and problems like employment, Digital Identity, healthcare, community build up, government and NGO partnerships by capitalizing the Blockchain revolution to bridge the gap between cash and the digital world.
+              
+          //.col-lg-6.col-md-5 
+            .lala-about-img
+              img.wow.fadeInLeftX(src="images/about_us.png" data-wow-duration=".5s" data-wow-delay=".5s" alt="")
+              //
+                <img src="images/about.png" class=" wow fadeInLeftX" data-wow-duration=".5s" data-wow-delay=".5s" alt="">
+                <img src="images/banner-img.png" class="wow fadeInLeftX" data-wow-duration=".5s" data-wow-delay="1s" alt="">
+      // End container
+    // End lala-download-section-area
+    #lala-feture.lala-feature-area.lala--parallax.jarallax(style="background-image: url(images/features-bg.png);")
+      .container
+        .lala-heding-title
+          // <i class="fa fa-refresh" aria-hidden="true"></i>
+          h2 LALA WORLD PRODUCTS
+          .clear-fix
+          p LALA is an ecosystem consisting of 5 major products
+        .row
+          .col-lg-4.col-md-4.col-sm-6
+            .lala-feature-item
+            .lala-feature-single-item.url.fslide_nav_active(data-index="1")
+                .lala-feature-item-icon
+                  img(src="images/product/lala-transfer.svg")
+            .lala-tra-content    
+              h2 LALA Transfer
+              p A Peer-to-Peer local and global remittance backed by fiat
+            .lala-feature-single-item.url(data-index="2")
+                .lala-feature-item-icon
+                  img(src="images/product/bill-pay.svg")
+                // <p>A Peer-to-Peer local and global remittance backed by fiat</p>
+            .lala-tra-content
+              h2 LALA Bill Pay
+              p Local and International bill payments for you and your family
+                // <p>Local and International bill payments for you and your family</p>
+            //.lala-tra-content    
+              h2 LALA Lends
+              p Domestic and International peer to peer lending via fiat, individual and small businesses
+            //.lala-feature-single-item.url(data-index="3")
+                .lala-feature-item-icon
+                  img(src="images/product/lala-lends.svg")
+                // <p>Domestic and International peer to peer lending via fiat, individual and small businesses</p>
+          .col-lg-4.col-md-4.wow.zoomIn(data-wow-duration="1s" data-wow-delay="0.5")
+            .lala-feature-single-phone
+              .lala-feature-animate-frame
+                .lala-feature-animate-slider.owl-carousel.owl-theme
+                  .feature-item
+                    img(src="images/lala_lends.png" alt="")
+                  .feature-item
+                    img(src="images/lala-transfer.png" alt="")
+                  .feature-item
+                    img(src="images/lala-bill-pay.png" alt="")
+                  .feature-item
+                    img(src="images/lala_lends.png" alt="")
+                  .feature-item
+                    img(src="images/lala_card.png" alt="")
+
+          .col-lg-4.col-md-4.col-sm-6
+            .lala-feature-item
+            .lala-feature-single-item.url(data-index="4")
+                .lala-feature-item-icon
+                  img(src="images/product/lala-card.svg")
+            .lala-card-content
+              h2 LALA Card
+              p Fiat card synced to your Wallet and usable at millions of PoS globally
+            .lala-feature-single-item.url(data-index="3")
+                .lala-feature-item-icon
+                  img(src="images/product/lala-lends.svg") 
+            .lala-card-content    
+              h2 LALA Lends
+              p Domestic and International peer to peer lending via fiat, individual and small businesses          
+        // End row
+      // End container
+    // End lala-feature-area
+    .lala-video-area
+      .lala-video-heding-title
+        // <i class="fa fa-refresh" aria-hidden="true"></i>
+        h2 LALA WORLD VIDEO
+        .clear-fix
+      .lala-video-bg
+        img(src="images/video-bgg.png" alt="")
+      .lala-video-popup
+        a.popup-youtube(href="https://www.youtube.com/watch?v=rg-VzMGAcpc")
+          p.video-title 
+          .iq-waves
+            .waves.wave-1
+            .waves.wave-2
+            .waves.wave-3
+            .waves.wave-4
+    // End lala-video-area
+    #team.lala-team-section-area
+      .container
+        .row
+          .col-md-12
+            h2 OUR TEAM
+            .clear-fix
+            h3
+              | We Are A Global Team Of Professionals Who Have Built, Sold And Rebuilt Businesses
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/sankalp.jpg" alt="")
+              .team-content
+                h5 Sankalp Shangari
+                h6 Founder & CEO
+                p
+                  | Deutsche, JP Morgan, InstantPay, Deep expertise in underbanked and payment systems, blockchain speaker, author.
+              .team-social.resp-social-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/sankalpshangari/" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/ranji1.jpg" alt="")
+              .team-content
+                h5 Ranjit Kumar
+                h6 Chief Operating Officer
+                p JCB India Ltd, Polyplex,<br> Syscom Corporation,<br> Morpho Group.
+              .team-social.resp-social-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/ranjitlala/" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/karan.jpg" alt="")
+              .team-content
+                h5 Karan Bhatia
+                h6 Global Head of Lending
+                p Fintech, Inclusive Finance, Structured Credit, Private Equity, Venture Capital
+              .team-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/karan-bhatia-cfa-2591a0/" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/kanavv.jpg" alt="")
+              .team-content.team-kanav
+                h5 Kanav Bhan
+                h6 Head of Marketing & Communication
+                p Experienced professional having creative instinct with an eye for details. Always learning & Building LALA World
+              .team-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/kanav-bhan-23112348/" target="_blank")
+                      span.fa.fa-linkedin
+        .row.tech-top-marg
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/vivekk.jpg" alt="")
+              .team-content
+                h5 VIVEK KUMAR TRIPATHI
+                h6 AVP Technology
+                p Project Manager at<br> Xperts Infosoft Pvt Ltd,<br> OpenSUM Technologies.
+              .team-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/vivek-kumar-tripathi-93190b35/" target="_blank")
+                      i.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/deepoo.jpg" alt="")
+              .team-content
+                h5 DEEPOO GUPTA
+                h6 Global Project Manager
+                p Techlites Solution,<br> YouLogix Infotech Pvt. Ltd
+              .team-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/vivek-kumar-tripathi-93190b35/" target="_blank")
+                      i.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/cheng.jpg" alt="")
+              .team-content.team-kanav
+                h5 CHENG WEI NG
+                h6 Head of Compliance <br> & Company Affair
+                p CorpZap Pte Ltd
+              .team-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/vivek-kumar-tripathi-93190b35/" target="_blank")
+                      i.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .team-2-item.manag-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/karthik.jpg" alt="")
+              .team-content.res-team-hei
+                h5 KARTHIKEYAN THANGAVEL
+                h6 Senior Blockchain Developer
+                p MOBODEXTER, Center for Artificial Intelligence and Robotics, DRDO
+              .team-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/vivek-kumar-tripathi-93190b35/" target="_blank")
+                      i.fa.fa-linkedin              
+      // End container
+    // End lala-download-section-area
+    //.lala-tech-section-area
+      .container
+        .row
+          .col-md-12
+            h2 OUR TECHNOLOGY TEAM
+            .clear-fix 
+          .col-lg-3.col-md-6.col-xs-12
+            .tech-2-item.tech-team
+              .tech-thumb
+                img.img-responsive.img-resiz-tech(src="images/team/karthik.jpg" alt="")
+              .tech-content
+                h5 KARTHIKEYAN THANGAVEL
+                h6 BLOCKCHAIN DEVELOPER
+                p MOBODEXTER, Center for Artificial Intelligence and Robotics, DRDO
+              .tech-social
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/karthikn-thangavel/" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .tech-2-item.tech-team
+              .tech-thumb
+                img.img-responsive.img-resiz-tech(src="images/team/ankit.jpg" alt="")
+              .tech-content
+                h5 ANKIT RAJ
+                h6 BLOCKCHAIN DEVELOPER
+                p Ex- Red Hat, <br>Blockchain Speaker 
+              .tech-social.resp-tech-social-padd   
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/ankitrajjha/" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .tech-2-item.tech-team
+              .tech-thumb
+                img.img-responsive.img-resiz-tech(src="images/team/shivam.jpg" alt="")
+              .tech-content
+                h5 SHIVAM TRIPATHI
+                h6 iOS Developer
+                p SynapseIndia, OpenXcell,<br> Systematix Infotech
+              .tech-social.resp-tech-social-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/shivam-tripathi-8287ab38" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-3.col-md-6.col-xs-12
+            .tech-2-item.tech-team
+              .tech-thumb
+                img.img-responsive.img-resiz-tech(src="images/team/guru.jpg" alt="")
+              .tech-content
+                h5 GURUCHETAN SINGH
+                h6 Senior Android Developer
+                p App Studioz,<br> PayU, Trupay
+              .tech-social.resp-tech-social-padd.low-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/guruchetan-singh-58270339" target="_blank")
+                      span.fa.fa-linkedin
+      // End container
+    // End lala-download-section-area
+    .lala-team-section-area.advis-img.adv-new-bg
+      .container
+        .row
+          .col-md-12
+            h2.adv LALA World Advisory Board 
+            .clear-fix
+            //h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci <br> 
+               didunt ut labore et dolore   
+        .row
+          .col-lg-4.col-md-6.col-xs-12
+            .team-2-item.adv-team.adv-team-new-bg
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/ari1.jpg" alt="")
+              .team-content
+                h5 ARI PAUL
+                // <h6>Founder & CEO</h6>
+                p Co-Founder of BlockTower Capital,<br> Angel Investor
+              .team-social.link-padd
+                ul.list-unstyled
+                  li
+                    a.link-bg-color(href="https://www.linkedin.com/in/ari-paul-8895a57/" target="_blank") 
+                      span.fa.fa-linkedin.link-color
+          //.col-lg-3.col-md-6.col-xs-12
+            .team-2-item.adv-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/thomas1.jpg" alt="")
+              .team-content
+                h5 THOMAS MCALISTER
+                p Blockchain Magician, BanKoin Reserve Several Patents
+              .team-social.link-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/thomas-mcalister-8a939a128/" target="_blank")
+                      span.fa.fa-linkedin
+          //.col-lg-4.col-md-6.col-xs-12
+            .team-2-item.adv-team
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/han1.jpg" alt="")
+              .team-content
+                h5 HAN KYUL PARK
+                p X BosCoin,<br> Blockchain Enterpreneur
+              .team-social.link-padd.res-no-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/han-kyul-park-609a0266/" target="_blank")
+                      span.fa.fa-linkedin
+          .col-lg-4.col-md-6.col-xs-12
+            .team-2-item.adv-team.adv-team-new-bg
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/dato-siri-amin1.jpg" alt="")
+              .team-content.res-adv-hei
+                h5 DATO’ SRI MOHD AMIN ABDUL NOR
+                p Founder and Chairman of <br> Bestinet Sdn Bhd
+              .team-social
+                ul.list-unstyled
+                  li.soci-mar.soci-mar-none-dato
+                    a.link-bg-color(href="https://www.linkedin.com/in/ds-mohd-amin-bin-abdul-nor-5a8618a8/" target="_blank")
+                      span.fa.fa-linkedin.link-color
+          .col-lg-4.col-md-6.col-xs-12
+            .team-2-item.adv-team.main-hei.adv-team-new-bg
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/dator-atha1.jpg" alt="")
+              .team-content.res-adv-hei-rath
+                h5 DATO’ RATHAKRISHNAN
+                p Managing Director of <br/> Bestinet Sdn Bhd
+              .team-social.adv-social-padd.adv-resp-padd
+                ul.list-unstyled
+                  li
+                    a.link-bg-color(href="#" target="_blank")
+                      i.fa.fa-linkedin.link-color
+          .col-lg-4.offset-lg-2.col-md-6.col-xs-12
+            .team-2-item.adv-team.main-hei.adv-team-new-bg
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/richard1.jpg" alt="")
+              .team-content
+                h5 RICHARD ROFÉ
+                p Entrepreneur, Advisor,<br> Board Member at Arcadia Capital
+              .team-social.adv-social-padd
+                ul.list-unstyled
+                  li.soci-mar.soci-mar-none
+                    a.link-bg-color(href="https://www.linkedin.com/in/richard-rof%C3%A9-9b38197/" target="_blank")
+                      i.fa.fa-linkedin.link-color
+          .col-lg-4.col-md-6.col-xs-12.resp-cent
+            .team-2-item.adv-team.main-hei.adv-team-new-bg
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/nith1.jpg" alt="")
+              .team-content
+                h5 NITHIN EAPEN
+                p Investor and Technologist <br/> at Arcadia
+              .team-social.adv-social-padd
+                ul.list-unstyled
+                  li.soci-mar.soci-mar-none
+                    a.link-bg-color(href="https://www.linkedin.com/in/nithin-eapen-630367143/" target="_blank") 
+                      i.fa.fa-linkedin.link-color                                    
+        br
+        br
+        .row
+          //.col-lg-3.col-md-6.col-xs-12
+            .team-2-item.adv-team.main-hei
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/dator-atha1.jpg" alt="")
+              .team-content
+                h5 DATO’ RATHAKRISHNAN
+                p Managing Director of Bestinet <br/> Sdn Bhd
+              .team-social.adv-social-padd.adv-resp-padd
+                ul.list-unstyled
+                  li
+                    a(href="#" target="_blank")
+                      span.fa.fa-linkedin
+          //.col-lg-3.col-md-6.col-xs-12
+            .team-2-item.adv-team.main-hei
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/brian11.jpg" alt="")
+              .team-content
+                h5 BRIAN CUMMING
+                p Managing Director, Global Head of Strategy at Freepoint Commodities
+              .team-social.adv-social-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/brian-cumming-cfa-a23b0121/" target="_blank")
+                      span.fa.fa-linkedin
+          //.col-lg-3.col-md-6.col-xs-12
+            .team-2-item.adv-team.main-hei
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/richard1.jpg" alt="")
+              .team-content
+                h5 RICHARD ROFÉ
+                p Entrepreneur, Advisor, Board Member at Arcadia Capital
+              .team-social.adv-social-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/richard-rof%C3%A9-9b38197/" target="_blank")
+                      span.fa.fa-linkedin
+          //.col-lg-3.col-md-6.col-xs-12
+            .team-2-item.adv-team.main-hei
+              .team-thumb
+                img.img-responsive.img-resiz(src="images/team/nith1.jpg" alt="")
+              .team-content
+                h5 NITHIN EAPEN
+                p Investor and Technologist <br/> at Arcadia
+              .team-social.adv-social-padd
+                ul.list-unstyled
+                  li
+                    a(href="https://www.linkedin.com/in/nithin-eapen-630367143/" target="_blank") 
+                      span.fa.fa-linkedin   
+      // End container
+    // End lala-download-section-area
+    #partner.partner-main
+      .container
+        #partners.row
+          .col-md-12
+            .lala-heding-title.ass
+              h2 Associations
+              .clear-fix
+              //h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci <br> 
+                 didunt ut labore et dolore
+          .col-md-4.col-xs-12.text-center
+            a(href="https://singaporefintech.org/" target="_blank")
+              img#img1.img-responsive.mem-stylee(src="images/sfa.png" width="250" height="150" alt="Member Logo")
+          .col-md-4.col-xs-12.text-center
+            a(href="https://www.access-sg.org/" target="_blank")
+              img#img2.img-responsive.mem-stylee(src="images/u1-b.png" width="250" height="150" alt="Member Logo")
+          .col-md-4.col-xs-12.text-center
+            a(href="http://csrsingapore.org/c/" target="_blank")
+              img#img3.img-responsive.mem-stylee(src="https://lalaworld.io/public/skin/images/partner/sglo1.png" width="280" height="150" alt="Member Logo")
+        //br
+        br
+        .row
+          .col-md-12
+            .lala-heding-title.ass
+              h2 LALA World Global Partners
+              .clear-fix
+              //h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci <br> 
+                 didunt ut labore et dolore
+            #client-slider.owl-carousel.owl-theme
+              //.item
+                .client-thumb
+                  a(href="https://www.stellar.org/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/13.png" alt="Client")
+              //.item
+                .client-thumb
+                  a(href="http://www.bestinet.com.my/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/1.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.ethos.io/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/12.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://cambridgejalandhar.in/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/5.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.rebit.ph/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/14.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://www.tasstech.com.my/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/4.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://www.clothesboxfoundation.org/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/7.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://www.iomniscient.com/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/6.png" alt="Client")
+              //.item
+                .client-thumb
+                  a(href="https://vibecyber.com/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/9.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="http://www.weps.com.my/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/10.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://hiving.technology/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/3.png" alt="Client")
+              //.item
+                .client-thumb
+                  a(href="http://www.firstmobilewallet.net/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/2.png" alt="Client")
+              //.item
+                .client-thumb
+                  a(href="https://mlgblockchain.com/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/8.png" alt="Client")
+              .item
+                .client-thumb
+                  a(href="https://www.cynopsis-solutions.com/" target="_blank")
+                    img.img-responsive(src="images/partner-logo/11.png" alt="Client")
+      
+    #lala-download.lala-download-section-area
+      .container
+        .lala-download-bg
+        .row
+          .col-lg-6.col-md-5
+            .lala-download-img
+              img.wow.fadeInLeftX(src="images/download-img-1.png" data-wow-duration=".5s" data-wow-delay=".5s" alt="")
+              img.wow.fadeInLeftX(src="images/download-img.png" data-wow-duration=".5s" data-wow-delay="1s" alt="")
+          .col-lg-6.col-md-7
+            .lala-download-content
+              h2 DOWNLOAD LALA WALLET
+              .clear-fix
+              p Now available for both Andriod & IOS version
+              a.google-play(href="https://play.google.com/store/apps/details?id=io.lalaworld.lalawallet&hl=en" target="_blank") 
+                img(src="images/download-google-btn.png" alt="")
+              a.app-store(href="#")
+                img(src="images/download-app-btn.png" alt="")
+      // End container
+    // End lala-download-section-area
+
+    #lala-contact.lala-contact-form-area
+      .container
+        .row
+          .col-lg-4.col-md-6
+            .lala-contact-form-content
+              .contact-form-content-title
+                h2 Keep in Touch
+              p.mail
+                i.fa.fa-envelope-o
+                |  Mail: 
+                a(href="mailto:hello@lalaworld.io") hello@lalaworld.io
+              .information
+                // <p>Our office Location</p>
+                h5
+                  i.fa.fa-map-o
+                  |  Singapore | India | Malaysia | Dubai
+              //
+                <div class="information">
+                <p>Call us for more Info & Question</p>
+                <h5>+000 001 002 003</h5>
+                </div>
+          .col-lg-8.col-md-6
+            .lala-contact-form-box
+              // <h3>Contact us</h3>
+              img(src="images/world-map.png")
+        // End row
+      // End container
+    // End lala-contact-form-area
+    script(src="js/sketch.js") 

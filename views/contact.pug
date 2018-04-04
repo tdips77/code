@@ -1,0 +1,134 @@
+extends layout
+block content
+ html
+  body
+    .inner-header-area    
+      .container 
+        .row
+          .col-lg-6.col-md-5
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true")  
+            .lala-header-menu 
+              ul
+                li
+                  a(href="/#about") about
+                li
+                  a(href="/#lala-feture") services
+                li
+                  a(href="/#team") team 
+                li
+                  a(href="/media") media
+                li
+                  a(href="#") faq 
+                li
+                  a(href="/exchangelisting") exchanges
+                li
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li>
+        // End row
+      // End container
+    // End lala-header-area
+    //#wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               i.fa.fa-telegram.icon-padd
+               span.tele.count 7,916 
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               i.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               i.fa.fa-medium.icon-padd
+               span#medium.count 186 
+    #top-header(style='background-image: url(images/privacy-policy-banner.png)') 
+      .banner-content
+        h1 Contact Us
+        .banner-description Let's Get In Touch
+    .mycontctBg
+      .container.mg3 
+        .col-md-12.m-styl.footer-mar-bottom
+          .col-md-5.offset-md-1.col-xs-12.new-cl
+            #sds.application-form.topspace-double
+              .row
+                // <h3 class="application-form-title bottomspace">Contact Form</h3>
+                form#contact-area.m-t(method='post' action='/contact' name='contact-area' novalidate='novalidate' enctype='multipart/form-data')
+                  input(name='_token' value='VcNNhH4136aS3Ina45mXdVoL1yrEt5rJidVWCiDF' type='hidden')
+                  .form-group
+                    select#category.form-control(name='category')
+                      option(value='') Choose Category
+                      option(value='1') Events
+                      option(value='2') Marketing
+                      option(value='3') Feedback / Queries
+                      option(value='4') Business Development
+                      option(value='5') ICO
+                  #subCategoryDiv.form-group
+                    select#sub_category.form-control(name='sub_category')
+                      option(value='') Choose Sub-category
+                  #dateDiv(style='display: none;')
+                    #data_1.form-group
+                      .input-group.date
+                        span.input-group-addon
+                          i.fa.fa-calendar
+                        input#date.form-control(value='' name='date' type='text')
+                  #locationDiv.form-group(style='display: none;')
+                    input#location.form-control(name='location' placeholder='Location' type='text')
+                  #websiteDiv.form-group(style='display: none;')
+                    input#website.form-control(name='website' placeholder='Website' type='text')
+                  #presentationDiv.form-group(style='display: none;')
+                    input#presentation.form-control(name='presentation' placeholder='Presentation Deck' type='text')
+                  #chargesDiv.form-group(style='display: none;')
+                    input#charges.form-control(name='charges' placeholder='Charges' type='text')
+                  .form-group
+                    input#name.form-control(name='name' placeholder='Your Name' type='text')
+                  .form-group
+                    input#email.form-control(name='email' placeholder='Email' type='text')
+                  .form-group
+                    input#mobile.form-control.num(name='mobile' placeholder='Mobile Number' type='text')
+                  .form-group
+                    textarea#comments.form-control(name='comments' rows='3' placeholder='Description')
+                  .form-group
+                    button#contact_form.btn.btn-primary.pull-right(type='button') Submit
+                .alert.alert-success.hide(role='alert')
+                  strong Great!
+                  |  Your form submitted successfully. One of our representative will be in touch soon!!.
+          .col-md-5.col-xs-12.new-cl.head-office(style='position: relative;margin-left: 8%;')
+            .text-center.cen
+              h3 Head Office
+              p
+                | 190 Clemenceau Avenue, #06-11,
+                br
+                |  Singapore 239924
+              h3 Our Locations
+              p
+                | Singapore | India | Malaysia | Dubai
+              h3 Mail Us
+              a(href='mailto:hello@lalaworld.io' style='color: #222;') hello@lalaworld.io
+          .col-md-1.col-xs-12 &nbsp;
+        .clearfix
+    
+          //.col-md-4.col-xs-12
+            a(href="https://www.access-sg.org/" target="_blank")
+              img#img2.img-responsive.mem-stylee(src="images/u1-b.png" width="250" height="150" alt="Member Logo")
+          //.col-md-4.col-xs-12
+            a(href="http://csrsingapore.org/c/" target="_blank")
+              img#img3.img-responsive.mem-stylee(src="https://lalaworld.io/public/skin/images/partner/sglo1.png" width="280" height="150" alt="Member Logo")          

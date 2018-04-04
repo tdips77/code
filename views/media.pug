@@ -1,0 +1,148 @@
+extends layout
+
+block content 
+ html
+  body
+    .inner-header-area    
+      .container 
+        .row
+          .col-lg-6.col-md-5
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true") 
+            .lala-header-menu 
+              ul
+                li
+                  a(href="/#about") about
+                li
+                  a(href="/#lala-feture") services
+                li
+                  a(href="/#team") team 
+                li
+                  a(href="/media") media
+                li 
+                  a(href="#") faq
+                li
+                  a(href="/exchangelisting") exchanges
+                li
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li>
+        // End row
+      // End container
+    // End lala-header-area
+    //#wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               i.fa.fa-telegram.icon-padd
+               span.tele.count 7,916 
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               i.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               i.fa.fa-medium.icon-padd
+               span#medium.count 186 
+    #top-header(style='background-image: url(images/privacy-policy-banner.png)') 
+      .banner-content
+        h1 Media
+        .banner-description Explore Us
+    .container
+      .row
+        .col-lg-12.text-center.mgr4
+         h1.bl Videos
+      .row
+        .col-md-12
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/rg-VzMGAcpc' allow='autoplay; encrypted-media' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 LALA Introduces Global Digital Wallet
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/UuLlC4sUm1A' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 LaLa World CEO &amp; Founder Sankalp Shangari on LaLa World updates and the road ahead
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/78nlIV0fKr4' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 Sankalp Shangari Blockchain 3.0 conference in Seoul
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/sJXLI8XQP0w' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 BLOCKCHAIN &amp; ICO FEST&apos;17
+        .clearfix
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/kXMnuN9L1tI' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 &Icy;&ncy;&tcy;&iecy;&rcy;&vcy;&softcy;&yucy; c &Scy;&acy;&ncy;&kcy;&acy;&lcy;&pcy;&ocy;&mcy; &SHcy;&acy;&ncy;&gcy;&acy;&rcy;&icy; &vcy; &rcy;&acy;&mcy;&kcy;&acy;&khcy; Blockchain Conference
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/fvhUQTbNhTI' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 Banking The Underbanked By Creating a Global Financial Ecosystem
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/STZIXAggzMs' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 LaLa World - Improving Daily Lives of The Migrants For Better
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/JdtqQBQI324' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 ICO &quot;LaLa World&quot; interview with Prakash Somosundram
+        .clearfix
+        .col-md-3.col-xs-12.ml1.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/JFf4Ol-RcJE' allowfullscreen='' width='100%' height='200' frameborder='0')
+            br
+            h5 16 OCT 2017 MOU 1
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/tK5bzmx07fI' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 Reinventing $500bn migrant remittance market
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/9NacqN3gcTo' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 LaLa World Serving the Underserved  
+        .col-md-3        
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/H8eKzpvT4rA' allowfullscreen='' width='100%' height='200' frameborder='0')
+            br
+            h5 Tass Tech &amp; Lala MOU Video
+        .col-md-3.col-xs-12.mb4
+            iframe.frame-border(src='https://www.youtube.com/embed/QEUDM4KHHoc' allowfullscreen='' width='100%' height='200' frameborder='0')
+            h5 Sankalp Shangari CEO of LaLa World Sharing His Thoughts
+        .col-md-3
+      .row
+        .col-lg-12.text-center.mgr4
+          h1.bl Podcast
+      .row
+        .col-md-12
+        .col-md-2
+        .col-md-4.col-xs-12.mb4
+          img.img-responsive1.part-style(src='https://lalaworld.io/public/skin/images/landing/podcast.jpg' alt='Partner Logo' style='margin-top: 0%; width: 100%;')
+          iframe#spreaker-player-879934.spreaker-player(src='https://widget.spreaker.com/player?episode_id=13519083&theme=dark&playlist=false&playlist-continuous=true&playlist-loop=false&playlist-autoupdate=true&autoplay=false&live-autoplay=false&chapters-image=true&hide-likes=false&hide-comments=false&hide-sharing=false&hide-logo=false&hide-episode-description=false&hide-playlist-images=false&hide-playlist-descriptions=false' width='100%' height='100px' frameborder='0')
+          script(async='' src='https://widget.spreaker.com/widgets.js')
+        .col-md-4.col-xs-12.mb4
+          img.img-responsive1.part-style(src='https://lalaworld.io/public/skin/images/landing/asia-tech.jpg' alt='Partner Logo' style='margin-top: 0%;width: 100%;')
+          a(href='http://www.asiatechpodcast.com/sankalp-shangari-founder-lala-world-banking-underbanked-via-blockchain-speaker-blockchain-author-investor/' target='_blank')
+           .pod_div
+            .col-md-4.col-xs-3.leftdv
+             img.img-responsive.part-style(src='https://lalaworld.io/public/skin/images/landing/pod-btn.png' alt='Partner Logo' style='margin-top: 0%;')
+            .col-md-8.col-xs-9.ri_txt Sankalp Shangari - Founder LALA World
+        .col-md-2.col-xs-12.mb4
+        .clearfix
+      .row
+        //.col-lg-12.text-center.mgr4
+         .navy-linee
+         h1.bl LALA World Galleria
+          //.col-md-4.col-xs-12
+            a(href="https://www.access-sg.org/" target="_blank")
+              img#img2.img-responsive.mem-stylee(src="images/u1-b.png" width="250" height="150" alt="Member Logo")
+          //.col-md-4.col-xs-12
+            a(href="http://csrsingapore.org/c/" target="_blank")
+              img#img3.img-responsive.mem-stylee(src="https://lalaworld.io/public/skin/images/partner/sglo1.png" width="280" height="150" alt="Member Logo")
+    

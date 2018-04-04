@@ -1,0 +1,78 @@
+extends layout
+
+block content
+ html
+  body
+    .inner-header-area     
+      .container 
+        .row
+          .col-lg-6.col-md-5
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true") 
+            .lala-header-menu 
+              ul
+                li
+                  a(href="/#about") about
+                li
+                  a(href="/#lala-feture") services
+                li
+                  a(href="/#team") team 
+                li
+                  a(href="/media") media
+                li
+                  a(href="#") faq
+                li
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li>
+        // End row
+      // End container
+    // End lala-header-area
+    //#wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               i.fa.fa-telegram.icon-padd
+               span.tele.count 7,916 
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               i.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               i.fa.fa-medium.icon-padd
+               span#medium.count 186 
+    #top-header(style='background-image: url(images/privacy-policy-banner.png)') 
+      .banner-content
+        h1 FAQs
+        .banner-description FAQ is very important to all:
+    #faq  
+      .container
+        .row
+          .col-md-12
+            //p Your privacy is important to us. 
+            p 
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            p 
+              | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            p
+              | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    

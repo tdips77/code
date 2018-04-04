@@ -1,0 +1,188 @@
+extends layout
+
+block content 
+ html
+  body
+    .inner-header-area    
+      .container 
+        .row
+          .col-lg-6.col-md-5
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true") 
+            .lala-header-menu 
+              ul
+                li
+                  a(href="/#about") about
+                li
+                  a(href="/#lala-feture") services
+                li
+                  a(href="/#team") team 
+                li
+                  a(href="/media") media
+                li
+                  a(href="#") faq 
+                li
+                  a(href="/exchangelisting") exchanges
+                li
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li>
+        // End row
+      // End container
+    // End lala-header-area
+    //#wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               i.fa.fa-telegram.icon-padd
+               span.tele.count 7,916 
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               i.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               i.fa.fa-medium.icon-padd
+               span#medium.count 186 
+    #top-header(style='background-image: url(images/privacy-policy-banner.png)') 
+      .banner-content
+        h1 Privacy Policy
+        .banner-description Your privacy is important to us.
+    #privacy-policy 
+      .container
+        .row
+          //.col-md-12
+            //.lala-heding-title
+              //h2 Privacy Policy
+              .clear-fix
+          .col-md-12
+            //p Your privacy is important to us.
+            p 
+              | In this policy, “LALA World”, “we”, “us”, “our” means, collectively, LALA World Pte Ltd. “You”, “your” or “yours” means the persons to whom this policy applies.
+            p
+              | The security of your personal data is important to us. LALA World has in place safeguards to protect the personal data stored with us. This policy describes how we may collect, use, disclose, process and manage your personal data.
+            p
+              | This policy applies to any individual’s personal data which is in our possession or under our control.
+            ol.allstyle
+              li.priv-heading 1.1 What personal data we collect 
+              p
+                | “Personal data” is data that can be used to identify a natural person. Some examples of personal data that we may collect are:
+              ul.normalsytle
+                li
+                  | personal particulars (e.g. name, contact details, residential address, date of birth, identity card/passport details, and/or education details)
+                li financial details (e.g. income, expenses, and/or credit history);
+                li images and voice recordings of our conversations with you;
+                li
+                  | employment details (e.g. occupation, directorships and other positions held, employment history, salary, and/or benefits);
+                li tax and insurance information;
+                li
+                  | information about your risk profile, investments, investment objectives, knowledge and experience and/or business interests and assets;
+                li banking information (e.g. account numbers and banking transactions); and/or
+                li personal opinions made known to us (e.g. feedback or responses to surveys);
+              li.priv-heading 1.2 Usage of your personal data
+              p We may use your personal data for our core business purposes, such as:
+              ul.normalsytle
+                li
+                  | developing and providing facilities, products or services (whether made available by us or through us), including but not limited to:
+                li transactions and clearing or reporting on these transactions;
+                li carrying out research, planning and statistical analysis; or
+                li
+                  | analytics for the purposes of developing or improving our products, services, security, service quality, and advertising strategies;
+                li
+                  | assessing and processing applications, instructions or requests from you or our customers;
+                li
+                  | communicating with you, including providing you with updates on changes to products, services and facilities (whether made available by us or through us) including any additions, expansions, suspensions and replacements of or to such products, services and facilities and their terms and conditions;
+                li
+                  | managing our infrastructure and business operations and complying with internal policies and procedures;
+                li responding to queries or feedback;
+                li addressing or investigating any complaints, claims or disputes;
+                li
+                  | verifying your identity for the purposes of providing facilities, products or services;
+                li
+                  | conducting credit checks, screenings or due diligence checks as may be required under applicable law, regulation or directive;
+                li
+                  | complying with all applicable laws, regulations, rules, directives, orders, instructions and requests from any local or foreign authorities, including regulatory, governmental, tax and law enforcement authorities or other authorities;
+                li enforcing obligations owed to us;
+                li monitoring products and services provided by or made available through us;
+                li
+                  | complying with obligations and requirements imposed by us from time to time by any credit bureau or credit information sharing services of which we are a member or subscriber;
+                li creating and maintaining credit and risk related models;
+                li
+                  | financial reporting, regulatory reporting, management reporting, risk management (including monitoring credit exposures), audit and record keeping purposes;
+                li
+                  | enabling any actual or proposed assignee or transferee, participant or sub-participant of LALA World’s rights or obligations to evaluate any proposed transaction;
+                li enforcing obligations owed to us; and/or
+                li seeking professional advice, including legal advice.
+                p
+                  | We may also use personal data for purposes set out in the terms and conditions that govern our relationship with you or our customer.
+              li.priv-line-h.priv-heading 1.3 Use of personal data for marketing purposes
+              p
+                | We may use your personal data to offer you products or services, including special offers, promotions, contests or entitlements that may be of interest to you or for which you may be eligible. Such marketing messages may be sent to you in various modes including but not limited to electronic mail, direct mailers, short message service, telephone calls, facsimile and other mobile messaging services. In doing so, we will comply with the Personal Data Protection Act of Singapore (PDPA) and other applicable data protection and privacy laws.
+              p
+                | In respect of sending telemarketing messages to your telephone number via short message service, telephone calls, facsimile and other mobile messaging services, please be assured that we shall only do so if we have your clear and unambiguous consent in writing or other recorded form to do so or if you have not otherwise made the appropriate registration of that number with the Do Not Call Registry. If we have an ongoing relationship with you and you have not indicated to us that you do not wish to receive telemarketing messages sent to your telephone number, we may send you telemarketing messages to that number related to the subject of our ongoing relationship via short message service, facsimile and other mobile messaging services (other than a voice or video call).
+              p
+                | You may at any time request that we stop contacting you for marketing purposes via selected or all modes.
+              p
+                | To find out more on how you can change the way we use your personal data for marketing purposes, please contact us.
+              p
+                | Nothing in this section shall vary or supersede the terms and conditions that govern our relationship with you.
+              li.priv-line-h.priv-heading 1.4 Disclosure and sharing of personal data
+              p
+                | We may from time to time and in compliance with all applicable laws on data privacy, disclose your personal data to any personnel of LALA World or to third parties, whether located in Singapore, or any other country, in order to carry out the purposes set out above. Please be assured that when we disclose your personal data to such parties, we require them to ensure that any personal data disclosed to them are kept confidential and secure.
+              p
+                | For more information about the third parties with whom we share your personal data, you may, where appropriate, wish to refer to the agreement(s) and/or terms and conditions that govern our relationship with you or our customer. You may also contact us for more information (please see the “How to contact us” section below).
+              p
+                | We wish to emphasise that LALA World does not sell personal data to any third parties and we shall remain fully compliant of any duty or obligation of confidentiality imposed on us under the applicable agreement(s) and/or terms and conditions that govern our relationship with you or our customer or any applicable law.
+              p
+                | We may transfer, store, process and/or deal with your personal data outside Singapore. In doing so, we will comply with the applicable data protection and privacy laws.
+              li.priv-line-h.priv-heading 1.5 Cookies and related technologies
+              p
+                | Our website uses cookies. A cookie is a small text file placed on your computer or mobile device when you visit a website or use an app. Cookies collect information about users and their visit to the website or use of the app, such as their Internet protocol (IP) address, how they arrived at the website (for example, through a search engine or a link from another website) and how they navigate within the website or app. We use cookies and other technologies to facilitate your internet sessions and use of our apps, offer you products and/or services according to your preferred settings, track use of our websites and apps and to compile statistics about activities carried out on our websites.
+              p
+                | You may set up your web browser to block cookies from monitoring your website visit. You may also remove cookies stored from your computer or mobile device. However, if you do block cookies you may not be able to use certain features and functions of our web sites.
+              li.priv-heading 1.6 Other web sites
+              p
+                | Our websites may contain links to other websites which are not maintained by LALA World. This privacy policy only applies to the web sites of LALA World. When visiting these third-party websites, you should read their privacy policies which will apply to your use of the websites.
+              li.priv-heading 1.7 Retention of personal data
+              p
+                | Your personal data is retained as long as the purpose for which it was collected remains and until it is no longer necessary for any other legal or business purposes.
+              li.priv-heading 1.8 Access and correction
+              p
+                | You may request access or make corrections to your personal data held by LALA World. LALA World may charge a fee for processing your request for access. Such a fee depends on the nature and complexity of your access request. Information on the processing fee will be made available to you.
+              p
+                | Please contact us (please see the “How to contact us” section below) for details on how you may request such access or corrections.
+              li.priv-heading 1.9 How to contact us
+              p
+                | To contact us on any aspect of this policy or your personal data or to provide any feedback that you may have, please visit any of our offices or get in touch with our customer centre officer in the following ways:
+              p
+                | You can contact our customer support officer at 
+                a.__cf_email__(href='/cdn-cgi/l/email-protection', data-cfemail='c8a0ada4a4a78884898489bfa7baa4ace6a1a7e6') [email protected]
+                |  If you are a customer you may also contact us by phone, skype, telegram, slack and whatsapp.
+              li.priv-line-h.priv-heading 1.10 Amendments and updates to LALA World Privacy Policy
+              p
+                | We may amend this policy from time to time to ensure that this policy is consistent with any developments to the way LALA World uses your personal data or any changes to the laws and regulations applicable to LALA World. We will make available the updated policy on our web site. All communications, transactions and dealings with us shall be subject to the latest version of this policy in force at the time.
+
+          //.col-md-4.col-xs-12
+            a(href="https://www.access-sg.org/" target="_blank")
+              img#img2.img-responsive.mem-stylee(src="images/u1-b.png" width="250" height="150" alt="Member Logo")
+          //.col-md-4.col-xs-12
+            a(href="http://csrsingapore.org/c/" target="_blank")
+              img#img3.img-responsive.mem-stylee(src="https://lalaworld.io/public/skin/images/partner/sglo1.png" width="280" height="150" alt="Member Logo")
+    

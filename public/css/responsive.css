@@ -1,0 +1,2637 @@
+
+/*For bigger screen then normal 960px desktop*/
+@media (min-width: 1380px) {
+  .lala-header-logo img {
+    width: 45%;
+    height: auto;
+  }
+  .lala-banner-content .ml15{
+    font-size: 3.0em;
+  }
+}
+@media (min-width: 1200px) {
+
+.lala-v2 .lala-banner-position-rel .background {
+  height: 100vh;
+  align-items: flex-end;
+  display: flex;
+}
+.lala-v2 .lala-banner-position-rel .background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25vh;
+  background-color: #6671E4;
+  top: 0;
+  left: 0;
+}
+}
+
+@media only screen and (max-width: 1199px) {
+
+.height-100vh,
+body.lala_stripes .height-100vh {
+  height: 80vh;
+  /*min-height: 700px;*/
+  min-height: 870px;
+  max-height: 700px;
+}
+body.lala_triangles .lala-banner-area {
+  height: 80vh;
+  min-height: 900px;
+  max-height: 900px;
+}
+body.lala_triangles .lala-banner-area .height-100vh {
+  min-height: 850px;
+  max-height: 850px;
+}
+body.lala-wave-banner .lala-banner-area .height-100vh {
+  max-height: 850px;
+}
+body.lala-wave .lala-banner-promo-section {
+    padding-top: 0px;
+}
+
+.lala-banner-content h1 {
+  /*font-size: 2.5em;*/
+  font-size: 2.4em;
+  line-height: 56px;
+}
+.lala-banner-content h5{
+  font-size: 1.5em;
+}
+.lala-about-heading{
+  padding: 130px 0 0px;
+}
+.lala-about-heading h2::before{
+  top: 39%;
+  left: 24%;
+}
+.lala-about-heading h2::after{
+  top: 38%;
+  right: 45%;
+}
+
+.lala-banner-content h1 {
+  font-size: 2.5em;
+  line-height: 56px;
+}
+.lala-banner-content p {
+  font-size: 1em;
+  line-height: 30px;
+}
+.lala-about-right-content h2 {
+  font-size: 1.7em;
+  line-height: 40px;
+}
+.about-list li {
+  font-size: 1em;
+}
+.lala-download-content h2 {
+  /*font-size: 2em;*/
+  font-size: 1.8em;
+  line-height: 54px;
+}
+.lala-pricing-table-content h2 {
+  font-size: 1.7em;
+  line-height: 40px;
+}
+.contact-form-content-title h2 {
+  font-size: 1.7em;
+  line-height: 40px;
+}
+/*.lala-download-img img:last-child {
+  display: none;
+}*/
+.lala-download-img img:first-child {
+  display: none;
+}
+.counter-left {
+  margin-right: 2px;
+}
+.count-right p {
+  font-size: 0.838em;
+}
+.google-play.fotter {
+  margin-right: 0;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: -20px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: -20px;
+}
+.lala-screen-mobile-image {
+  width: 315px;
+  height: 615px;
+}
+.lala-subscribe input[type="email"] {
+  height: 100px;
+}
+.lala-subscribe input[type="submit"] {
+  height: 50px;
+  top: 26px;
+  width: 190px;
+}
+.lala-about-two-area .lala-about-left-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.lala-user-review-item {
+  width: auto;
+}
+.lala-v2 .lala-fotter-area {
+  background-size: cover;
+  background-position: center;
+}
+.lala-swiper-slider-area .swiper-wrapper {
+  height: 600px;
+}
+.swiper-slide.swiper-slide-active,
+.swiper-slide {
+  background-size: 100% 100%;
+}
+body.lala_default .lala-banner-promo-item {
+  margin-top: -250px;
+}
+.lala-banner-video .lala-banner-screenshot:nth-child(3) {
+  left: auto;
+  right: -20px;
+}
+
+/*lala V2*/
+.lala-v2 .lala-banner-promo-section {
+  padding: 0 0 100px;
+}
+.lala-v2 .lala-video-bg {
+  min-height: 500px;
+}
+.lala-v2 .lala-video-popup {
+  top: 45%;
+}
+.lala-v2 .video-title {
+  font-size: 1.60em;
+}
+.lala-v2 .lala-download-img img:last-child {
+  display: block;
+}
+.lala-v2 .lala-download-img::before {
+  height: calc(100% + 531px);
+  width: calc(100% + 276px);
+}
+.lala-v2 .lala-download-img img:last-child {
+  left: 100px;
+}
+.lala-v2 .lala-swiper-slider-area {
+  padding: 100px 0;
+}
+.lala-v2 .lala-banner-position-rel .background {
+  height: 80vh;
+  align-items: flex-end;
+  display: flex;
+  max-height: 700px;
+}
+.lala-v2 .lala-banner-position-rel .background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  background-color: #6671E4;
+  top: 0;
+  left: 0;
+}
+.lala-banner-content {
+    padding-left: 0px;
+}
+.lala-banner-img {
+  max-width: 310px;
+}
+.lala--videobg-skew {
+  height: 500px;
+}
+
+/*lala BLOG*/
+.lala-blog-content {
+  padding: 150px 0 100px;
+}
+
+
+.lala-about-bg{
+  background-position: right center;
+}
+.lala-about-content {
+    padding: 90px 0;
+}
+
+.lala-feature-area{
+  padding: 80px 0 140px;
+
+}
+.lala-heding-title h2::before{
+  left: 23%;
+}
+.lala-tra-content{
+  margin-bottom: 75px;
+}
+.lala-card-content{
+  margin-bottom: 75px;
+}
+.lala-feature-single-item{
+  margin-right: 25px;
+}
+.lala-video-area{
+  padding: 80px 0px 80px 0px;
+}
+.lala-video-heding-title h2::before{
+  left: 26%;
+}
+.lala-video-bg{
+  margin-top: 30px;
+}
+.lala-team-section-area h2::before{
+
+  left: 23%;
+}
+.lala-team-section-area h3{
+  margin-bottom: 90px;
+}
+.resp-social-padd{
+  padding-top: 24px !important;
+}
+.lala-tech-section-area h2::before{
+  left: 23%;
+}
+.tech-team{
+  height: 361px;
+}
+.tech-2-item .tech-content h5{
+  line-height: 26px;
+}
+/*.tech-2-item .tech-content p{
+  height: auto;
+}*/
+.team-2-item .team-content p{
+  height: 110px;
+}
+.resp-tech-social-padd{
+  padding-top: 50px !important;
+}
+.adv-resp-padd{
+  padding-top: 3px !important;
+}
+.team-kanav p {
+    height: 110px !important;
+}
+.res-team-hei p {
+    height: 88px !important;
+}
+.advis-img{
+  margin-top: 0px;
+}
+.res-adv-hei p{
+  /*height: 54px !important;*/
+  /*height: 97px !important;*/
+  height: 76px !important;
+}
+.soci-mar {
+    padding-top: 0px;
+}
+.res-adv-hei-rath p{
+  height: 97px !important;
+}
+#partners {
+    margin-bottom: 40px;
+}
+.partner-main{
+  padding: 70px 0px 110px;
+}
+.lala-download-content h2::before{
+  width: 95%;
+  left: 3%;
+}
+.lala-download-img{
+  margin-top: 0px;
+}
+.lala-download-img img:nth-child(2){
+  left: 100px;
+  top: 55px;
+}
+.lala-download-content{
+  text-align: center;
+}
+.google-play{
+  margin-left: 0px;
+}
+.app-store{
+  margin-left: 15px;
+}
+/******add 27-03-18*******/
+.low-padd{
+  padding-top: 28px !important;
+}
+#top-header{
+  margin-bottom: 30px;
+}
+.bl::before{
+  left: 24%;
+}
+.bl::after{
+  right: 44%;
+}
+img.nw-st1{
+  padding: 1.4em;
+}
+img.nw-st2 {
+  padding: 1.9em;
+}
+/*.widget.theme_dark .player_title{
+  line-height: 14px;
+  font-size: 11px; 
+}*/
+#term_con{
+  margin-top: 40px;
+}
+.pricing-grids {
+    margin: 1.5em 0;
+}
+#careers{
+  margin-top: 30px;
+}
+/******add 27-03-18*******/
+.player_title{font-size: 11px !important;line-height: 14px !important;}    
+
+/*******Custome Responsive End*******/
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+.w-ab{top: 8.5em;} 
+.input-more input{width: 66%;}
+.input-more button{width: 34%;}
+
+.player_title{font-size: 11px !important;line-height: 14px !important;}    
+
+.lala-phone-visuals {
+  margin-top: 4rem;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.lala-iphone {
+  padding: 2.5rem 0.6rem 0;
+}
+.lala-iphone::before {
+  width: 14rem;
+  padding-top: 167%;
+}
+.appscraft-screen-container {
+  width: 14rem;
+  padding-top: 154%;
+  top: 2.5rem;
+}
+.lala-v2 .lala-user-review-bg {
+  right: calc(-100vw + 60%);
+}
+.lala-v2 .lala-user-review-area {
+  padding: 100px 0 150px;
+}
+.lala-v2 .lala-contact-form-box::before {
+  background-size: contain;
+  height: calc(100% + 0px);
+  right: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+}
+.lala-v2 .lala-contact-form-content::before {
+  background-size: contain;
+  height: calc(100% + 0px);
+  left: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+}
+
+/*lala BLOG PAGE*/
+.lala-blog-content {
+  padding: 120px 0 80px;
+}
+.post-title h2 {
+  font-size: 1.3em;
+  line-height: 32px;
+}
+.blog-category ul li a {
+  font-size: 0.875em;
+}
+.lala-single-popylar-item h2 {
+  font-size: 0.875em;
+}
+.google-play.blog {
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+.blog-post-single-pagination:nth-child(1) ul li a {
+  height: 60px;
+  line-height: 60px;
+  width: 150px;
+}
+.blog-post-single-pagination:nth-child(2) ul li {
+  margin: 0 3px;
+}
+.blog-post-single-pagination:nth-child(3) ul li a {
+  height: 60px;
+  line-height: 60px;
+  width: 150px;
+}
+.single-blog-img-left img {
+  height: 270px;
+}
+.lala-blog-post-content {
+  padding: 20px 5px;
+}
+.lala-blog-post-detalis {
+  margin-bottom: 50px;
+}
+.lala-blog-single-sidebar {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+.lala-single-blog .lala-blog-post {
+  padding: 20px;
+}
+body.lala_curved .lala-banner-area:before, body.lala_curved .lala-fotter-area:before {
+  bottom: 7vh;
+}
+body.lala_curved .lala-banner-area:after, body.lala_curved .lala-fotter-area:after {
+  bottom: 5vh;
+}
+.stripes-header {
+  bottom: 10px;
+}
+body.lala_stripes .lala-banner-area {
+  margin-bottom: 5vh;
+}
+.waves {
+  max-height: 200px;
+}
+body.lala-v2.lala-wave-banner .lala-banner-area {
+  margin-bottom: 50px;
+}
+body.lala-wave .lala-image-bounce img {
+  max-width: 600px;
+}
+
+
+}
+
+/*For Tablet Layout*/
+@media (min-width: 768px) and (max-width: 991px) {
+ .subs-feilds{height: 34px;}  
+.svgp {width: 52%;}
+.w-ab{top: 7.5em;}
+.input-more input{width: 62%;font-size: 14px;height: 34px;}
+.input-more button{width: 38%;padding: 4px 10px; font-size: 12px;}
+
+.mn {overflow-x: hidden;}  
+.lala-phone-visuals {
+  margin-top: 4rem;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.lala-iphone {
+  padding: 2.5rem 0.6rem 0;
+}
+.lala-iphone::before {
+  width: 14rem;
+  padding-top: 167%;
+}
+.appscraft-screen-container {
+  width: 14rem;
+  padding-top: 154%;
+  top: 2.5rem;
+}
+.height-100vh,
+body.lala_stripes .height-100vh {
+  height: 60vh;
+  min-height: 600px;
+}
+.lala-banner-img {
+  max-width: 230px;
+}
+.lala-header-menu {
+  background: #000 none repeat scroll 0 0;
+  display: none;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  text-align: left;
+  top: 60px;
+  width: 100%;
+}
+.menu-toggle {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+  position: absolute;
+  right: 30px;
+ /* top: -13px;*/
+} 
+.menu-toggle:before {
+  content: "\f0c9";
+}
+.lala-header-menu ul {
+  display: block;
+}
+.lala-header-menu ul li {
+  margin: 20px 0 20px 20px;
+}
+.lala-header-menu ul li a {
+  font-size: 0.9em;
+}
+
+.lala-banner-content h1 {
+  /*font-size: 2.0em;*/
+  font-size: 1.8em;/*change*/
+  /*line-height: 1.2;*/
+  line-height: 40px;
+}
+
+.lala-banner-content h1 {
+  font-size: 2.0em;
+}
+.lala-banner-content .ml15{
+  font-size: 1.8em;
+}
+.lala-banner-content p {
+  font-size: 0.9em;
+  line-height: 2;
+  padding: 18px 0 20px;
+}
+.lala-default-btn {
+  min-width: 180px;
+  line-height: 50px;
+  height: 50px;
+}
+.lala-banner-promo-section {
+  padding: 0 0 150px;
+}
+.lala-banner-promo-item {
+  padding: 40px;
+}
+.lala-feature-single-item {
+  margin-bottom: 35px;
+  /*margin-right: 15px;*/
+  margin-right: 9px;
+}
+.lala-feature-item-icon {
+  margin: 0 auto 20px;
+}
+.item-title {
+  font-size: 1em;
+}
+.lala-about-area {
+  padding: 0 0 70px;
+}
+.lala-about-left-img::before {
+  background-position: right center;
+}
+.lala-about-right-content {
+  padding: 37px 0;
+}
+.lala-about-right-content i {
+  font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-about-right-content h2 {
+  font-size: 1.5em;
+  line-height: 40px;
+  padding: 18px 0 15px;
+}
+.lala-about-right-content p {
+  margin: 0 0 20px;
+}
+.about-list li {
+  font-size: 1em;
+}
+.lala-about-two-area {
+  padding: 0;
+}
+
+.lala-counter-area {
+  padding: 80px 0;
+}
+.single-counter{
+  margin-bottom: 50px;
+}
+.lala-download-img {
+  margin-top: 30px;
+}
+/*.lala-download-img img:last-child {
+  display: none;
+}*/
+.lala-download-img img:first-child {
+  display: none;
+}
+.lala-download-content {
+  padding: 190px 0;
+  text-align: center;/*add*/
+}
+.lala-download-content h2 {
+  font-size: 1.9em;
+  line-height: 40px;
+}
+.lala-download-content p {
+  font-size: 1em;
+}
+.google-play {
+  height: 60px;
+  line-height: 60px;
+  width: 175px;
+  margin-left: 0px;/*add*/
+}
+.app-store {
+  height: 60px;
+  line-height: 60px;
+  width: 175px;
+  /*margin-left: 50px;*//*change*/
+  margin-left: 15px;/*add*/
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: -20px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: -20px;
+}
+.lala-screen-mobile-image {
+  width: 240px;
+  height: 528px;
+}
+.lala-pricing-table-content h2 {
+  font-size: 1.5em;
+  line-height: 40px;
+}
+.lala-pricing-table-content i {
+  font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-pricing-table-box.lala-pricing-table-2 {
+  left: 27px;
+}
+.lala-contact-form-area {
+  padding: 50px 0 100px;
+}
+.contact-form-content-title h2 {
+  font-size: 1.7em;
+  line-height: 40px;
+}
+.information h5 {
+  font-size: 1em;
+}
+.lala-fotter-title i {
+  font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-fotter-title h2 {
+  font-size: 1.5em;
+}
+.lala-subscribe input[type="email"] {
+  height: 115px;
+}
+.lala-subscribe input[type="submit"] {
+  height: 55px;
+  top: 30px;
+  width: 200px;
+}
+.google-play.fotter {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  width: 150px;
+}
+.app-store.fotter{
+  height: 50px;
+  line-height: 50px;
+  margin-right: 0px;
+  width: 150px;
+}
+.lala-swiper-slider-area .swiper-wrapper {
+  height: 515px;
+  width: 200px;
+}
+body.lala_curved .lala-banner-area:before, body.lala_curved .lala-fotter-area:before {
+  bottom: 7vh;
+}
+body.lala_curved .lala-banner-area:after, body.lala_curved .lala-fotter-area:after {
+  bottom: 5vh;
+}
+.lala--videobg-skew {
+  height: 400px;
+}
+.banner-swiper-screenshot {
+  max-width: 500px;
+}
+body.lala-screenshot .banner-swiper-screenshot .lala-screen-mobile-image {
+  height: 552px;
+  width: 264px;
+}
+.waves {
+  max-height: 150px;
+}
+body.lala-v2.lala-wave .height-100vh {
+  min-height: 600px;
+  max-height: 600px;
+}
+body.lala-wave .lala-image-bounce img {
+  max-width: 500px;
+}
+
+/*lala V2*/
+.lala-v2 .lala-banner-promo-section {
+  padding: 0 0 100px;
+}
+.lala-v2 .lala-video-bg {
+  min-height: 400px;
+}
+.lala-v2 .lala-feature-item-icon {
+  height: 109px;
+  margin: 0 auto 20px;
+  width: 109px;
+}
+.lala-v2 .lala-feature-item-icon i {
+  height: 80px;
+  line-height: 80px;
+  top: 0;
+  width: 80px;
+}
+.lala-v2 .lala-video-area {
+  padding: 0 0 135px;
+}
+.lala-v2 .lala-about-area {
+  padding: 100px 0;
+}
+.lala-v2 .lala-about-right-content {
+  padding: 10px 0;
+}
+.lala-v2 .lala-counter-area {
+  padding: 0;
+}
+.lala-v2 .lala-swiper-slider-area {
+  padding: 100px 0;
+}
+.lala-v2 .lala-download-img img:last-child {
+  height: inherit;
+  left: 0;
+  position: absolute;
+  top: 75px;
+}
+.lala-v2 .lala-download-img::before {
+  height: calc(100% + 425px);
+  width: calc(100% + 320px);
+}
+.lala-v2 .lala-download-img img:last-child {
+  display: block;
+}
+.lala-v2 .lala-user-review-bg {
+  background-position: bottom center;
+  height: 90%;
+  right: calc(-100vw + 75%);
+}
+.lala-v2 .lala-contact-form-box::before {
+  background-size: contain;
+  height: calc(100% + 0px);
+  right: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+}
+.lala-v2 .lala-contact-form-content::before {
+  background-size: contain;
+  height: calc(100% + 0px);
+  left: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+}
+.lala-v2 .lala-contact-form-content {
+    margin-bottom: 70px;
+}
+.lala-v2 .lala-banner-position-rel .background {
+  min-height: 0;
+  height: 600px;
+}
+.lala-v2 .lala-fotter-area::after {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  bottom: -30%;
+}
+.lala-fotter-area.lala-parallax {
+  padding-bottom: 100px;
+}
+.stripes-header {
+  bottom: 0px;
+}
+body.lala_stripes .lala-banner-area {
+  margin-bottom: 5vh;
+}
+.lala-banner-screenshot {
+  position: static;
+  max-width: 100%;
+}
+.lala-banner-video {
+  height: auto;
+  top: 15%;
+}
+.lala-banner-video .lala-default-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/*lala BLOG PAGE*/
+
+.lala-blog-area {
+  padding: 70px 0;
+}
+.lala-blog-content {
+  padding: 100px 0 70px;
+}
+.post-title h2 {
+  font-size: 1.3em;
+  line-height: 32px;
+}
+.blog-category ul li a {
+  font-size: 0.875em;
+}
+.lala-single-popylar-item h2 {
+  font-size: 0.875em;
+}
+.google-play.blog {
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+.blog-post-single-pagination:nth-child(1) ul li a {
+  height: 60px;
+  line-height: 60px;
+  width: 150px;
+}
+.blog-post-single-pagination:nth-child(2) ul li {
+  margin: 0 3px;
+}
+.blog-post-single-pagination:nth-child(3) ul li a {
+  height: 60px;
+  line-height: 60px;
+  width: 150px;
+}
+.lala-single-blog .lala-blog-post {
+  padding: 40px;
+}
+.lala-blog-post-detalis p {
+  font-size: 0.938em;
+}
+.lala-blockquote blockquote {
+  font-size: 0.938em;
+  margin: 40px 0;
+}
+.single-blog-heart i {
+  margin-right: 5px;
+}
+.single-blog-social-icon p {
+  margin-right: 0px !important;
+}
+.lala-blog-post-content {
+  padding: 20px 5px;
+}
+.lala-blog-post-detalis {
+  margin-bottom: 50px;
+}
+.lala-blog-single-sidebar {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+.lala-single-blog .lala-blog-post {
+  padding: 20px 10px;
+}
+.lala-single-blog .lala-blog-single-img {
+  margin-bottom: 20px;
+}
+.single-blog-img-left {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.single-blog-img-right {
+  width: 100%;
+}
+.single-blog-img-left {
+  height: 215px;
+}
+.lala-single-blog-img {
+  padding: 40px 0;
+}
+.lala-feature-animate-frame {
+  width: 290px;
+  height: 560px;
+  top: 20px;
+}
+.lala-banner-promo-item::before {
+  height: 100%;
+}
+body.lala-v2.lala-wave-banner .lala-banner-area {
+  margin-bottom: 40px;
+}
+/*******Custome Responsive Start*******/
+.lala-banner-content h5{
+  font-size: 1.2em;
+}
+.lala-banner-content {
+    padding-left: 0;
+}
+.lala-about-section-area{
+  padding: 80px 0px 0px 0px;
+}
+.lala-about-heading{
+  /*padding: 110px 0 0px;*/
+  padding: 45px 0 0px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.lala-about-heading h2{
+  font-size: 1.8em;
+}
+.lala-about-heading h2::before{
+  /*top: 41%;*/
+  top: 32%;
+  left: 16%;
+}
+.lala-about-heading h2::after{
+  /*top: 40%;
+  right: 43%;*/
+  top: 31%;
+  right: 43%;
+}
+
+.lala-about-section-area{
+  padding: 80px 0px 0px 0px;
+}
+.lala-banner-area{
+  background-size: initial;margin-bottom: 50px;
+}
+.height-80vh{
+  height: 50vh;
+  min-height: 512px;
+  left: 6%;
+}
+canvas.sketch{
+  height: auto !important;
+}
+.lala--bannerllax{height: 60vh;}
+canvas.sketch{height: 580px !important;} 
+
+.lala-about-bg{
+  /*background-position: right center;
+  right: 70px;*/
+  padding: 90px 0 65px 0;
+}
+.lala-about-content{
+  /*padding: 110px 0;*/
+  /*padding: 60px 0;*/
+  padding: 40px 0;
+}
+.lala-about-content h2{
+  font-size: 1.5em;
+  padding-bottom: 0px;
+}
+.lala-about-content h3{
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+.lala-about-content p{
+  font-size: 13px;
+  line-height: 20px;
+}
+.lala-about-img {
+    padding-top: 120px;
+}
+.lala-feature-area{
+  /*padding: 40px 0 50px;*/
+  padding: 30px 0 90px;
+}
+.lala-heding-title h2::before{
+  width: 60%;
+  left: 130px;
+}
+.lala-heding-title h2::after{
+  right: 42%;
+}
+.lala-heding-title{
+  margin-bottom: 30px;
+}
+.lala-heding-title h2{
+  font-size: 1.5em;
+}
+.lala-heding-title p{
+  font-size: 13px;
+  padding-top: 45px;
+}
+.lala-tra-content{
+  width: 48%;
+  margin-bottom: 0px;
+}
+.lala-tra-content h2{
+  font-size: 0.9em;
+}
+.lala-tra-content p{
+  font-size: 12px;
+  line-height: 20px;
+}
+.lala-card-content{
+  width: 48%;
+  margin-bottom: 0;
+}
+.lala-card-content h2{
+  font-size: 0.9em;
+}
+.lala-card-content p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.lala-video-heding-title h2{
+  font-size: 1.5em;
+}
+.lala-video-area{
+  padding: 0px 0px 70px 0px;
+}
+.lala-video-heding-title h2::before{
+  left: 18%;
+}
+.lala-video-heding-title h2::after{
+  right: 43%;
+}
+.lala-video-bg{
+  margin-top: 40px;
+}
+.iq-waves{
+  /*top: 0;*/
+  top: 50px;
+}
+.resp-cent{
+  margin: 0 auto;
+}
+.lala-team-section-area h2::before{
+  width: 60%;
+  left: 130px;
+}
+.lala-team-section-area h2::after{
+  right: 42%;
+}
+.lala-team-section-area{
+  padding: 30px 0px 60px 0px;
+}
+.lala-team-section-area h2{
+  font-size: 1.5em;
+}
+.res-adv-hei p{
+  height: 98px !important;
+}
+.soci-mar {
+    padding-top: 22px !important;
+}
+.soci-mar-none-dato{
+  padding-top: 0px !important;
+}
+.lala-team-section-area h3{
+  font-size: 13px;
+  margin-bottom: 70px;
+}
+.manag-team {
+  /*height: 295px;*/
+  height: 368px;
+  margin-bottom: 25px;
+}
+.team-kanav p {
+    height: 110px !important;
+}
+.res-no-padd{
+  padding-top: 0px !important;
+}
+/******add 27-03-18*******/
+.resp-social-padd{
+  padding-top: 0px !important;
+}
+.resp-tech-social-padd {
+    padding-top: 2px !important;
+}
+.tech-2-item .tech-content p{
+  height: 87px;
+}
+.adv-social-padd {
+    padding-top: 3px !important;
+}
+.low-padd{
+  padding-top: 2px !important;
+}
+#top-header{
+  margin-bottom: 15px;
+}
+.bl::before{
+  left: 16%;
+}
+.bl::after{
+  right: 41%;
+}
+.mb4 h5{
+  font-size: 12px;
+}
+.player_info.player_title {
+    font-size: 13px !important;
+}
+.pod_div .ri_txt{
+  font-size: 13px;
+}
+img.nw-st1{
+  padding: 1.64em;
+}
+img.nw-st2 {
+    padding: 1.9em;
+}
+.price-bg p{
+  font-size: 15px;
+}
+.cart3{
+  padding: 2.7em 0em 2.7em;
+}
+.cart3 a{
+  /*padding: 0.8em 1em;*/
+  padding: 0.8em 0.7em;
+}
+.cart1{
+  padding: 2.7em 0em 2.6em;
+}
+.cart1 a{
+  padding: 0.8em 1em;
+}
+.priv-heading{
+  font-size: 1.4em !important;
+}
+.priv-line-h {
+    line-height: 36px;
+    padding-bottom: 20px;
+}
+#term_con{
+  margin-top: 35px;
+}
+#term_con h3{
+  font-size: 1.3em !important;
+}
+.pricing-grids{
+  margin: 1.3em;
+}
+#careers{
+  margin-top: 30px;
+}
+
+/******add 27-03-18*******/
+.lala-tech-section-area h2::before{
+  width: 60%;
+  left: 130px;
+}
+.lala-tech-section-area h2::afetr{
+ right: 42%;
+}
+.lala-tech-section-area{
+  padding: 50px 0px 60px 0px;
+}
+.lala-tech-section-area h2{
+  font-size: 1.5em;
+}
+.tech-team {
+    margin-bottom: 25px;
+}
+.lala-team-section-area h2.adv {
+    margin-bottom: 90px;
+}
+.adv-team {
+    margin-bottom: 25px;
+}
+/*.advis-img {
+    background-image: url(/images/adv-bg.png);
+}*/
+.partner-main {
+    padding: 30px 0px;
+}
+.lala-heding-title {
+    margin-bottom: 25px;
+}
+.ass{
+  margin-bottom: 50px;
+}
+#partners {
+  margin-bottom: 20px;
+}
+.lala-download-content h2::before{
+  width: 90%;
+  left: 18px;
+}
+.lala-download-content h2::after{
+  right: 37%;
+}
+.lala-download-img img:nth-child(2){
+  left: 0px;
+  top: -6px;
+  height: auto;
+}
+.lala-download-content h2 {
+    font-size: 1.5em;
+    /*line-height: 20px;*/
+}
+.lala-contact-form-area {
+    padding: 50px 0 50px;
+}
+.contact-form-content-title h2 {
+    font-size: 1.5em;
+    line-height: 20px;
+}
+.contact-form-content-title h2:after{display: none;}
+.contact-form-content-title h2:before{display: none;} 
+.information {
+    margin-bottom: 15px;
+  }
+  .lala-fotter-area{
+    padding: 30px 0;
+  }
+  .widget.widget-text h6{
+    font-size: 16px;
+    line-height: 42px;
+  }
+  .widget.widget-text p{
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .fotter-logo p{
+    font-size: 13px; text-align: center;
+  }
+.fotter-social-icon {text-align: center;} 
+.block-intro--home-footer .wave-start{margin-top: 20px;height:192px;}
+.social-side{
+  display: none;
+}
+/*******Custom Responsive End*******/
+}
+
+/*For Wide Mobile Layout*/
+@media (max-width: 767px) {
+
+.subs-feilds{height: 34px;}  
+.svgp {width: 60%;}
+.w-ab{top: 6.5em;}
+.input-more input{width: 60%;font-size: 14px;height: 34px;}
+.input-more button{width: 40%;padding: 4px 4px; font-size: 11px;} 
+.whi{font-size:16px; }
+
+  .wave-start1{display: none;} 
+.mn {overflow-x: hidden;}
+.height-100vh {
+  height: 80vh;
+  min-height: 600px;
+}
+body.lala_curved .lala-banner-area .height-100vh {
+  height: auto;
+  min-height: 0; 
+}
+body.lala_curved .lala-banner-content {
+    margin-bottom: 50px;
+}
+.lala-v2 .lala-banner-position-rel .background {
+  background-color: #6671E4;
+}
+.lala-default-btn {
+  box-shadow: 0 0 0 transparent;
+}
+.mobile-hidden {
+  display: none !important;
+}
+.lala-header-menu {
+  background: #000 none repeat scroll 0 0;
+  display: none;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  text-align: left;
+  top: 21px;
+  width: 100%;
+}
+.menu-toggle {
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  right: 30px;
+  top: -52px;
+  display: block;
+  cursor: pointer;
+}
+.menu-toggle:before {
+  content: "\f0c9";
+} 
+
+.lala-header-menu ul {
+  display: block;
+}
+.lala-header-menu ul li {
+      margin: 10px 0 10px 20px;
+}
+body.lala_default .lala-banner-area {
+  padding-bottom: 100px;
+}
+.lala-banner-content h1 {
+  font-size: 2.0em;
+  line-height: 1.3;
+}
+.lala-banner-content p {
+  font-size: 1em;
+  padding: 20px 0;
+}
+.lala-default-btn {
+  min-width: 175px;
+  line-height: 45px;
+  height: 45px;
+  padding: 0 15px;
+}
+.lala-banner-img {
+  display: none;
+}
+.lala-banner-promo-section {
+  padding: 0 0 100px;
+}
+body.lala_default .lala-banner-promo-item {
+  margin-top: -105px;
+  padding: 50px;
+}
+.lala-banner-video .lala-banner-screenshot:nth-child(3) {
+  left: auto;
+  right: 0;
+}
+.lala-banner-promo-item::before {
+  height: 100%;
+}
+.lala-banner-single-promo {
+  margin-bottom: 40px;
+}
+.lala-heding-title i {
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-heding-title h2 {
+  font-size: 1.8em;
+}
+.lala-heding-title p {
+  font-size: 0.9em;
+}
+.lala-about-left-img {
+  margin-bottom: 110px;
+  text-align: center;
+}
+.lala-swiper-slider-area .swiper-wrapper {
+  height: 540px;
+}
+.lala-screen-mobile-image {
+  width: 270px;
+  height: 552px;
+}
+.lala-about-right-content i {
+  font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-about-right-content h2 {
+  font-size: 1.7em;
+  line-height: 40px;
+}
+.lala-about-area {
+  padding: 0;
+}
+.lala-about-right-content {
+  margin-bottom: 110px;
+  padding: 0;
+}
+.lala-about-two-area {
+  padding: 0;
+}
+.lala-about-two-area .lala-about-left-img {
+  margin-bottom: 0;
+  height: auto !important;
+}
+.lala-about-two-area .lala-about-right-content {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.about-list li {
+  font-size: 1em;
+}
+.lala-user-review-item {
+  width: calc(100% - 60px);
+  padding: 30px;
+}
+.lala-counter-area {
+  padding: 100px 0 0;
+  text-align: center;
+}
+.single-counter{
+  margin-bottom: 40px;
+}
+.counter-left {
+  float: none;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.count-right {
+  float: none;
+}
+.lala-download-bg {
+  left: -50vw;
+  transform: translate3d(0,0,0) !important;
+}
+.lala-download-section-area {
+  text-align: center;
+}
+.lala-download-content {
+  padding: 50px 0 250px;
+}
+.lala-download-content h2 {
+  font-size: 1.9em;
+}
+.google-play {
+ height: 65px !important;
+  line-height: 65px !important;
+  width: 180px !important;
+}
+.app-store {
+  height: 65px !important;
+  line-height: 65px !important;
+  width: 180px !important;
+}
+.lala-swiper-slider-area {
+  padding: 0;
+}
+.lala-pricing-table-content i {
+  font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-pricing-table-content h2 {
+  font-size: 1.7em;
+  line-height: 40px;
+}
+.lala-pricing-table-content {
+  margin-bottom: 0px;
+  padding: 50px 0;
+}
+.lala-contact-form-area {
+  padding: 70px 0 100px;
+}
+.contact-form-content-title h2 {
+  font-size: 2em;
+  line-height: 45px;
+  padding: 6px 0 30px;
+}
+.contact-form-content-title h2:after{display: none;}
+.contact-form-content-title h2:before{display: none;}
+.information h5 {
+  font-size: 1em;
+}
+#lala_submit {
+  width: 170px;
+}
+.lala-fotter-title i {
+  font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+}
+.lala-fotter-title h2 {
+  font-size: 1.5em;
+}
+.lala-subscribe input[type="email"] {
+  font-size: 1em;
+  padding: 0 50px !important;
+  height: 100px;
+}
+.lala-subscribe i {
+  left: 22px;
+}
+.lala-subscribe input[type="submit"] {
+  font-size: 0.8em;
+  height: 50px;
+  right: 14px;;
+  width: 155px;
+  top: 24px; box-shadow: none;
+}
+.lala-fotter-top {
+  padding: 0 0 50px;
+}
+.lala-fotter-area {
+  padding: 50px 0 50px;
+  text-align: center;
+  /*background-color: #0ea4b0;*/
+  background-color: #51a4d7;/*change*/
+}
+.fotter-social-icon {
+  margin-bottom: 50px;
+}
+.app-download {
+  text-align: center;
+}
+.google-play.fotter {
+  height: 60px;
+  line-height: 60px;
+  margin-right: 10px;
+  width: 165px;
+}
+#lala-welcome-slider .owl-dots {
+  position: static;
+  bottom: inherit;
+  left: inherit;
+  transform: none;
+}
+.lala-fotter-area.lala-parallax {
+  padding-bottom: 50px;
+}
+.banner-swiper-screenshot {
+  max-width: 300px;
+}
+body.lala-screenshot .banner-swiper-screenshot .lala-screen-mobile-image {
+  height: 625px;
+  width: 300px;
+}
+body.lala-screenshot .swiper-slide.swiper-slide-active img {
+  width: calc(100% - 16px);
+  margin-left: 8px;
+}
+body.lala-wave .lala-fotter-area, body.lala-screenshot .lala-fotter-area {
+  padding-top: 100px;
+}
+.waves {
+  max-height: 100px;
+}
+body.lala-v2.lala-wave-banner .lala-banner-area {
+  margin-bottom: 0px;
+}
+body.lala-v2.lala-wave .height-100vh {
+  min-height: 600px;
+  max-height: 600px;
+}
+
+/*lala V2*/
+.lala-v2 .lala-banner-position-rel .background:before {
+  height: 50vh;
+}
+.lala-v2 .lala-banner-position-rel .background {
+  height: 80vh;
+  min-height: 600px;
+}
+.lala-v2 .video-title {
+  font-size: 1.2em;
+}
+.lala-v2 .lala-counter-area {
+  padding: 0;
+}
+.lala-v2 .lala-download-img::before {
+  display: none;
+}
+.lala-v2 .lala-download-content {
+  padding: 0;
+}
+.lala-v2 .lala-download-img img:last-child {
+  height: inherit;
+  left: 0;
+  position: relative;
+  top: 0;
+}
+.lala-v2 .lala-download-img {
+  margin-top: 0;
+}
+.lala-v2 .lala-download-content h3 {
+  margin: 45px 0 0;
+}
+.pricing-table-right,
+.lala-v2 .pricing-table-right {
+  position: relative;
+  top: 0;
+  min-height: 670px;
+}
+.lala-v2 .pricing-table-right::before {
+  background-size: 100%;
+  height: calc(100% + 0px);
+  left: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+}
+.lala-contact-form-area {
+  padding: 70px 0 100px;
+}
+.lala-v2 .lala-contact-form-box::before {
+  background-size: contain;
+  height: calc(100% + 0px);
+  right: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+
+}
+.lala-v2 .lala-contact-form-content::before {
+  background-size: contain;
+  height: calc(100% + 0px);
+  left: 0px;
+  top: 0px;
+  width: calc(100% + 0px);
+}
+.lala-v2 .lala-swiper-slider-area {
+    padding: 100px 0 0;
+}
+.lala-pricing-table-box {
+  padding: 30px 20px;
+}
+.lala-v2 .lala-fotter-area::after {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  bottom: -30%;
+}
+.lala--videobg-skew {
+  height: 350px;
+}
+body.lala_triangles .lala-banner-area .height-100vh {
+  min-height: 600px;
+  max-height: 600px;
+}
+body.lala_triangles .lala-banner-area {
+  min-height: 700px;
+  max-height: 700px;
+}
+
+/*lala BLOG PAGE*/
+
+.lala-blog-area {
+  padding: 50px 0 100px;
+}
+.lala-blog-content {
+  padding: 90px 0 60px;
+}
+.lala-blog-post-detalis {
+  margin-bottom: 50px;
+}
+.lala-blog-content h2 {
+  font-size: 1.8em;
+}
+.post-title h2 {
+  font-size: 1.2em;
+  line-height: 28px;
+}
+.blog-post-pagination {
+  margin-top: 50px;
+  width: 100%;
+}
+.blog-post-single-pagination:nth-child(1) ul li a {
+  height: 50px;
+  line-height: 50px;
+  width: 140px;
+}
+.blog-post-single-pagination:nth-child(3) ul li a {
+  height: 50px;
+  line-height: 50px;
+  width: 140px;
+}
+.google-play.blog {
+  height: 50px !important;
+  line-height: 50px !important;
+  margin-right: 6px;
+  width: 130px !important;
+}
+.app-store.blog{
+  height: 50px !important;
+  line-height: 50px !important;
+  margin-right: 6px;
+  width: 130px !important;
+}
+.blog-post-single-pagination:nth-child(2) {
+  padding: 10px 0;
+}
+.blog-post-single-pagination:nth-child(2) ul li a {
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+}
+.blog-post-single-pagination:nth-child(2) ul li {
+  margin: 0;
+}
+.lala-blog-sidebar {
+  margin-top: 50px;
+}
+.lala-blog-post-detalis p {
+  font-size: 0.938em;
+}
+.lala-single-blog .lala-blog-post {
+  padding: 40px;
+}
+.lala-blog-post-content {
+  padding: 10px 5px;
+}
+.lala-blog-single-sidebar {
+  background: #f6f8ff none repeat scroll 0 0;
+  margin-bottom: 30px;
+  padding: 20px 15px;
+}
+.lala-single-blog .lala-blog-post {
+  padding: 20px 10px;
+}
+.lala-single-blog .lala-blog-single-img {
+  margin-bottom: 30px;
+}
+.single-blog-img-left {
+  height: 100%;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.single-blog-img-right {
+  width: 100%;
+}
+.lala-single-blog-img {
+  padding: 30px 0;
+}
+.lala-blockquote blockquote {
+  margin: 50px 0 30px;
+}
+.lala-feature-animate-frame {
+  top: 0px;
+  width: 300px;
+  height: 590px;
+  max-width: 365px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.featured-slider-static-img {
+  display: none;
+}
+.lala-v2 .lala-video-bg {
+  min-height: 400px;
+}
+body.lala_stripes .height-100vh {
+  height: 80vh;
+  min-height: 500px;
+}
+.stripes-header {
+  bottom: 0px;
+}
+body.lala_stripes .lala-banner-area {
+  margin-bottom: 5vh;
+  min-height: 550px;
+}
+.stripes-header .stripe {
+  height: 104px;
+}
+.stripes-header .s0 {
+  bottom: 103px;
+  height: 4000px;
+}
+.stripes-header .s3 {
+  bottom: 104px;
+}
+.stripes-header .s4 {
+  bottom: 208px;
+}
+.stripes-header .s5 {
+  bottom: 308px;
+}
+.stripes-header .s6 {
+  bottom: 412px;
+}
+
+
+#top-header{
+  padding-bottom: 25px;
+}
+.cen{
+  height: 20vh;
+}
+.head-office{
+  margin-top: :30px !important;
+  margin-left: 0px !important;
+}
+}
+
+
+@media (max-width: 575px) {
+
+.lala-swiper-slider-area .swiper-wrapper {
+  height: 760px;}
+  .lala-about-img img{
+    display: none;
+  }
+
+.svgp {width: 100%;} 
+.w-ab {top: 7.5em;} 
+.well-text{left: -4%;}
+.subs-feilds{width: 90% !important; }
+.input-more input{width: 64%;}
+.input-more button {width: 36%;padding: 3px 4px;font-size: 13px;}
+
+.lala-swiper-slider-area .swiper-wrapper {
+  height: 760px;
+}
+.lala-screen-mobile-image {
+  display: none;
+}
+.swiper-slide.swiper-slide-active, .swiper-slide {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-prev {
+  box-shadow: none;
+}
+.swiper-slide.swiper-slide-active {
+  border-radius: 0px;
+}
+/*******Custome Responsive Start*******/
+.height-80vh{
+  height: 50vh;
+  min-height: 400px; left: 15px;
+}
+.lala--bannerllax{height: 56vh;} 
+.lala-banner-area{
+ background-size: cover;
+background-position-y: -150px;margin-bottom: 50px;
+}
+
+.lala-banner-content {
+    padding-left: 0px;
+}
+.lala-banner-content h5{
+  font-size: 1.3em;
+  line-height: 40px;
+}
+.lala-banner-content .ml15{
+  font-size: 1.9em;
+}
+.lala-banner-content{
+  margin: 0 auto;/*add*/
+}
+/*.lala-about-bg{
+  height: 280px;
+}*/
+.lala-about-heading {
+    padding: 45px 0 0px;
+}
+.lala-about-heading h2{
+  font-size: 1.1em;
+}
+.lala-about-heading h2::before {
+    top: 28%;/*add*/
+    left: 14%;
+    width: 70%;
+}
+.lala-about-heading h2::after {
+    top: 27%;/*add*/
+    right: 43%;
+    width: 17%;
+}
+.lala-banner-content{
+  margin: 0 auto;/*add*/
+}
+.lala-about-section-area{
+  padding: 70px 0px 0px 0px;
+}
+.lala-about-bg{
+  background-position: right center;
+  background-size: 100%;
+  height: 100%;
+  /*right: -33px;*/
+}
+.lala-about-img img{
+  display: none;
+}
+
+.lala-about-content {
+     padding: 12px 0;
+    margin-bottom: 30px;
+}
+.lala-about-content h2{
+  font-size: 1.3em;
+}
+.lala-about-content h3{
+  font-size: 1em;
+  line-height: 36px;
+}
+.lala-about-content p{
+  font-size: 10px;
+  line-height: 15px;/*add*/
+}
+.lala-about-img {
+    padding-top: 20px;
+}
+.lala-feature-area{
+  /*padding: 30px 0 50px;*/
+  padding: 30px 0 0px;/*change*/
+}
+.lala-heding-title{
+  /*margin-bottom: 20px;*/
+  margin-bottom: 40px;/*change*/
+}
+.lala-heding-title h2 {
+    font-size: 1.3em;
+}
+.lala-heding-title h2::before{
+  width: 75%;/*add*/
+  left: 12%;/*add*/
+}
+.lala-heding-title h2::after{
+  width: 30%;/*add*/
+  right: 35%;/*add*/
+}
+.lala-heding-title p {
+    font-size: 0.7em;
+    padding-top: 45px;/*add*/
+}
+.lala-feature-item {
+    margin-top: 5px;
+}
+.lala-feature-single-phone{
+  display: none;/*add*/
+}
+.lala-tra-content{
+  margin-bottom: 50px;/*add*/
+  margin-left: 25px;/*add*/
+  clear: none;/*add*/
+  float: left;/*add*/
+}
+.lala-card-content{
+  float: left;/*add*/
+  margin-bottom: 50px;/*add*/
+  margin-left: 25px;/*add*/
+  clear: none;/*add*/
+}
+.item-title {
+    font-size: 1em;
+}
+.lala-feature-single-item {
+    margin-bottom: 25px;
+    margin-right: 40px;/*add*/
+    float: right;/*add*/
+}
+.lala-video-heding-title h2{
+  font-size: 1.1em;
+}
+.lala-video-heding-title h2::before {
+    left: 10%;
+    width: 80%;
+}
+.lala-video-heding-title h2::after{
+  right: 38%;
+}
+.lala-video-area{
+  /*padding: 0px 0px 30px 0px;*/
+  padding: 0px 0px 40px 0px;/*change*/
+}
+.iq-waves{
+  top: 120%;
+}
+.resp-social-padd {
+    padding-top: 0px !important;
+}
+.lala-team-section-area{
+  padding: 15px 0px 10px 0px;
+  margin-top: 25px;
+}
+.lala-team-section-area h2{
+  font-size: 1.1em;
+  line-height: 36px;
+  padding-bottom: 10px;
+}
+.lala-team-section-area h2::before{
+  width: 75%;/*add*/
+  left: 12%;/*add*/
+}
+.lala-team-section-area h2::after{
+  width: 30%;/*add*/
+  right: 35%;/*add*/
+}
+.lala-team-section-area h3{
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.team-kanav p {
+    height: 66px !important;
+}
+.manag-team {
+    /*height: 290px;*/
+    height: 346px;
+    margin-bottom: 25px;
+}
+.team-2-item .team-content h5{
+  font-size: 14px;
+}
+.team-2-item .team-content p{
+  height: 88px;/*add*/
+}
+.resp-tech-social-padd {
+    padding-top: 0px !important;
+}
+.lala-tech-section-area{
+  padding: 30px 0px 50px 0px;
+}
+.lala-tech-section-area h2{
+  font-size: 1.3em;
+  margin-bottom: 80px;
+}
+.lala-tech-section-area h2::before{
+  width: 75%;/*add*/
+  left: 12%;/*add*/
+}
+.lala-tech-section-area h2::after{
+  width: 30%;/*add*/
+  right: 35%;/*add*/
+}
+.tech-team{
+  margin-bottom: 25px;
+}
+.tech-2-item .tech-content h5{
+  font-size: 14px;
+}
+.lala-team-section-area h2.adv {
+    margin-bottom: 25px;/*add*/
+}
+.adv-team{
+  margin-bottom: 25px;
+}
+.partner-main {
+  padding: 20px 0px;
+}
+#partners {
+  margin-bottom: 30px;/*add*/
+}
+#partners a{
+ width: 100%;
+display: block;
+text-align: center;
+}
+.lala-heding-title h2 {
+    font-size: 1.1em;
+}
+.lala-download-bg{
+  left: -17vw;
+}
+.lala-download-img img{
+  display: none;
+}
+.lala-download-content {
+    /*padding: 0px 0 80px;*/
+    padding: 20px 0 100px;
+}
+
+.lala-download-content h2 {
+    font-size: 1.1em;
+}
+.lala-download-content h2::before{
+  width: 75%;/*add*/
+  left: 12%;/*add*/
+}
+.lala-download-content h2::after{
+  width: 30%;/*add*/
+  right: 35%;/*add*/
+}
+.lala-download-content p{
+  font-size: 14px;
+  /*padding: 5px 0 25px;*/
+  padding: 45px 0 25px;
+}
+.lala-contact-form-area {
+    /*padding: 30px 0 50px;*/
+    padding: 0px 0 50px;
+}
+.contact-form-content-title h2{
+  font-size: 1.1em;
+  padding: 6px 0 15px;
+  text-align: center;
+}
+.contact-form-content-title h2:after{display: none;}
+.contact-form-content-title h2:before{display: none;}
+.mail{
+  font-size: 14px;
+  text-align: center;
+}
+.information{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.information h5 {
+    font-size: 14px;
+}
+.fotter-social-icon{text-align: center;} 
+.lala-fotter-area {padding: 30px 0 0px;}
+.social-side{
+  display: none;
+}
+canvas.sketch{height: 320px !important;} 
+
+.main{width: 100%;}
+
+
+.cen{
+  height: 20vh;
+  padding-bottom: 130px;
+}
+.head-office{
+  margin-top: 0px !important;
+  margin-left: 15% !important;
+}
+.new-cl{
+  margin: 0px;
+}
+.mycontctBg h3{
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.cen p{
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+/******add 27-03-18*******/
+#top-header h1{
+  font-size: 38px;
+}
+#top-header .banner-description{
+  font-size: 20px;
+}
+#privacy-policy{
+  margin-top: 30px;
+}
+.bl::before{
+  width: 80%;
+  left: 10%;
+}
+.bl::after{
+  width: 25%;
+  left: 38%;
+}
+.ml1 {
+    margin-left: 0%;
+}
+.pod_div .leftdv{
+  width: 15%;
+}
+.pod_div .ri_txt{
+  width: 85%;
+}
+.pricing-grids {
+    margin: 2.0em 0;
+}
+.pricing-grid1{
+  width: auto;
+}
+.pricing-grid2{
+  width: auto;
+}
+.pricing-grid3{
+  width: auto;
+}
+.price-bg p{
+  font-size: 16px;
+  line-height: 22px;
+}
+.cart2{
+  margin-bottom: 20px;
+  padding: 2.0em 0em 2.0em;
+}
+.cart3{
+  margin-bottom: 20px;
+  padding: 2.0em 0em 2.0em;
+}
+.cart1{
+  margin-bottom: 20px;
+  padding: 2.0em 0em 2.0em;
+}
+.priv-heading{
+  font-size: 1.2em !important;
+}
+.priv-line-h {
+    line-height: 36px;
+    padding-bottom: 20px;
+}
+#term_con h3{
+  font-size: 1.0em !important;
+}
+#term_con p{
+  font-size: 12px;
+}
+#privacy-policy p{
+  font-size: 12px;
+}
+.normalsytle {
+    padding-left: 17px;
+}
+ul.normalsytle li{
+  font-size: 12px;
+}
+.modal-dialog {
+    width: 95%;
+}
+/******add 27-03-18*******/
+/*******Custome Responsive End*******/
+}
+
+
+/*For 320-384px up Mobile Layout*/
+@media (max-width: 479px) {
+
+.whiline{width: 15%;}
+.w-ab {top: 5.3em;}
+
+.lala-banner-content {
+  position: inherit;
+  text-align: center;
+  top: inherit;
+  transform: inherit;
+  width: 100%;
+}
+.lala-banner-content h1 {
+  /*font-size: 1.8em;*/
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+.lala-banner-content p {
+  line-height: 30px;
+}
+.lala-banner-promo-section {
+  padding: 0 0 50px;
+}
+.lala-banner-promo-item {
+  padding: 20px;
+}
+.lala-heding-title i {
+  height: 50px;
+  line-height: 50px;  
+  width: 50px;
+}
+.lala-heding-title h2 {
+  /*font-size: 1.4em;*/
+  font-size: 1.1em;
+}
+.item-title {
+ /* font-size: 1.3em;*/
+  font-size: 1em;
+}
+.lala-feature-area {
+  /*padding: 0 0 50px;*/
+  padding: 0 0 15px;
+}
+.lala-feature-single-item {
+  /*margin-bottom: 50px;*/
+  /*margin-bottom: 25px;*/
+  margin-bottom: 0px;
+}
+
+.lala-feature-item-icon {
+  /*margin: 0 auto 25px;*/
+}
+.lala-video-area {
+  /*padding: 0 0 10px;*/
+  padding: 0 0 20px;
+}
+.lala-video-popup {
+  /*top: 39%;*/
+  top: 21%;
+}
+.iq-waves {
+  border-radius: 50%;
+  height: 50px;
+  transform: translate(-50%, 45%);
+  width: 50px;
+  top: 65px;
+}
+.lala-about-area {
+  padding: 50px 0 0;
+  text-align: center;
+}
+.lala-about-two-area .lala-about-right-content {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.lala-about-right-content h2 {
+  font-size: 1.5em;
+  line-height: 35px;
+}
+.lala-about-two-area {
+  text-align: center;
+}
+.about-list li {
+  text-align: left;
+}
+.lala-user-review-area {
+  padding: 100px 0 0;
+  text-align: center;
+}
+.user-review-content p {
+  font-size: 0.838em;
+}
+.user-review-meta-img {
+  float: none;
+}
+.user-review-meta-img img {
+  margin: 0 auto;
+}
+.user-review-meta-content {
+  float: none;
+  margin-top: 15px;
+}
+
+.lala-counter-area {
+  padding: 50px 0 0;
+}
+.google-play {
+  margin: 0 10px 0px 0px;  
+  height: 55px !important;
+    line-height: 55px !important;
+    width: 130px !important;
+}
+.google-play img{width: 90px;}
+.lala-download-content h2 { 
+  line-height: 40px;
+}
+.lala-screen-mobile-image {
+  display: none;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  display: none;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+ display: none;
+}
+.lala-pricing-table-area {
+  text-align: center;
+}
+.lala-pricing-table-content h2 {
+  font-size: 1.3em;
+  line-height: 30px;
+}
+.lala-pricing-table-box.lala-pricing-table-2{
+  top: 50%;
+  transform: translate(-50% ,-50%) !important;
+  left: 50%;
+}
+.lala-pricing-table-box {
+  top: 50%;
+  transform: translate(-50% ,-50%);
+  left: 50%;
+}
+.lala-contact-form-area {
+  text-align: center;
+}
+.contact-form-content-title h2:after{display: none;}
+.contact-form-content-title h2:before{display: none;} 
+.lala-fotter-area {
+  background-size: 100% auto;
+  padding: 150px 0;
+  background-color: #0688a4;
+}
+.lala-fotter-area {
+  padding: 30px 0 20px; background-image: none;
+  text-align: center;
+}
+.lala-v2 .lala-fotter-area {
+  padding: 60px 0 70px;
+  text-align: center;
+}
+.lala-subscribe input[type="email"] {
+  height: 50px;
+}
+.lala-subscribe input[type="submit"] {
+  transform: none;
+  position: static;
+  margin-top: 20px;
+}
+.lala-subscribe label {
+  bottom: 46px;
+}
+.lala-subscribe i {
+    top: 25px;
+}
+.contact-form-content-title h2 {
+ /*font-size: 1.5em;*/
+ font-size: 1.1em;
+ line-height: 35px;
+}
+.google-play.fotter {
+  margin-right: 0;
+}
+
+/*lala BLOG PAGE*/
+.lala-blog-area {
+  padding: 50px 0;
+}
+.blog-post-single-pagination:nth-child(1) ul li a {
+  height: 40px;
+  line-height: 40px;
+  width: 120px;
+}
+.blog-post-single-pagination:nth-child(3) ul li a {
+  height: 40px;
+  line-height: 40px;
+  width: 120px;
+}
+.single-blog-img-left img {
+  height: 158px;
+}
+.lala-single-blog-img {
+  padding: 30px 0;
+}
+.single-blog-img-left {
+  height: 160px;
+}
+.fotter-social-icon{line-height: 48px; margin-bottom: 0px;} 
+
+/*******Custome Responsive Start*******/
+.height-80vh{
+  left: 5%;height: 40vh;
+  /*min-height: 290px;*/
+  min-height: 360px;
+}
+#top-slider {
+  padding-top: 30px;
+}
+.lala-banner-content h5{
+  font-size: 1.0em;
+}
+.lala-about-bg {
+    /*height: 180px;*/
+    background-size: 100%;
+    height: 100%;
+}
+.lala-about-heading {
+    padding: 30px 0 0px;
+}
+.lala-about-heading h2 {
+    font-size: 0.8em;
+}
+.lala-about-heading h2::before {
+    top: 28% !important;
+    left: 19%;
+    width: 60%;
+}
+.lala-about-heading h2::after {
+    top: 26% !important;
+    right: 43%;
+    width: 17%;
+}
+.lala-about-content p{
+  font-size: 7px;
+ line-height: 11px;
+ margin-bottom: 0px;
+}
+.social-side{
+  display: none;
+}
+.lala-banner-content .ml15{
+  /*font-size: 1.5em;*/
+  font-size: 1.3em;
+}
+.lala-download-img{ 
+  margin-top: 40px;
+}
+.lala-download-content h2{
+  font-size: 1.1em;
+}
+.lala-download-content {
+    padding: 0px 0 50px;
+}
+.lala-heding-title h2::before{
+  width: 100%;
+  left: 0%;
+}
+.lala-heding-title h2::after{
+  width: 40%;
+  right: 31%;
+}
+.lala-heding-title p{
+  padding-top: 45px;
+}
+.lala-tra-content{
+/*float: none;*/
+margin: 0 auto !important;
+margin-bottom: 35px !important;/*add*/
+}
+.lala-feature-single-item{
+  margin-right: 0px;
+}
+.lala-feature-single-phone{
+  display: none;
+}
+.lala-card-content{
+  margin: 0 auto;
+  float: left;
+}
+.lala-team-section-area h2::before{
+  width: 100%;
+  left: 0%;
+}
+.lala-team-section-area h2::after{
+  width: 40%;
+  right: 31%;
+}
+.lala-team-section-area h3{
+  padding-top: 45px;
+}
+.lala-tech-section-area h2::before{
+  width: 100%;
+  left: 0%;
+}
+.lala-tech-section-area h2::after{
+  width: 40%;
+  right: 31%;
+}
+.lala-video-heding-title h2 {
+    font-size: 1.1em;
+}
+.lala-video-heding-title h2::after{
+  right: 32%; 
+}
+#partners {
+  margin-bottom: 15px;
+}
+.lala-download-content h2::before{
+ width: 90%;
+    left: 4%;
+}
+.lala-download-content h2::after{
+  width: 40%;
+  right: 31%;
+}
+.app-store img{width: 90px;}
+.app-store{
+  margin-left: 0px;
+  height: 55px !important;
+    line-height: 55px !important;
+    width: 130px !important;
+}
+
+canvas.sketch{height: 250px !important;width: 100% !important;}
+
+.head-office{
+  margin-left: 5% !important;
+}   
+/******add 27-03-18*******/
+#top-header {
+    margin-bottom: 0px;
+}
+#term_con {
+    margin-top: 20px;
+}
+#term_con h3 {
+    font-size: 0.7em !important;
+    font-weight: 600;
+}
+#term_con p{
+  font-size: 11px;
+}
+#top-header h1{
+  font-size: 35px;
+}
+#top-header .banner-description{
+  font-size: 16px;
+}
+.priv-heading{
+  font-size: 0.7em !important;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.priv-line-h{
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+#privacy-policy p{
+  font-size: 11px;
+}
+ul.normalsytle li{
+  font-size: 11px;
+}
+.normalsytle{
+  padding-left: 15px;
+}
+
+
+
+.fotter-logo p {font-size: 0.625em;}
+} 
+
+/******add 27-03-18*******/ 
+/*******Custome Responsive End*******/ 

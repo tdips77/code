@@ -1,0 +1,1487 @@
+extends layout 
+block content 
+ html
+  body
+    #myModal.modal.inmodal(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-dialog 
+        .modal-content.animated.bounceInRight
+          form#careerForm.m-t(name='careerForm', role='form', action='/career', method='post', enctype='multipart/form-data')
+            #application_holder.application-form.topspace-double
+              .row
+                h3.application-form-title.bottomspace 
+                  | Application
+                  | Form
+                .form-group
+                  input#first_name.form-control(type='text', required="required", name='first_name', placeholder='First Name')
+                .form-group
+                  input#last_name.form-control(type='text', name='last_name', placeholder='Last Name')
+                .form-group
+                  input#email_address.form-control(type='text', name='email_address', required="required", placeholder='Email')
+                .form-group
+                  input#mobile.form-control.num(type='text', name='mobile', data-length-value='10',  required="required", placeholder='Mobile Number')
+                .form-group
+                  input#exp.form-control.num(type='number', name='exp', placeholder='Total Relevant Experience (years)')
+                .form-group
+                  .fileinput.fileinput-new.input-group(data-provides='fileinput')
+                    .form-control(data-trigger='fileinput')
+                      i.glyphicon.glyphicon-file.fileinput-exists
+                      span.fileinput-filename
+                    span.input-group-addon.btn.btn-default.btn-file
+                      span.fileinput-new Upload CV
+                      span.fileinput-exists Change
+                      input#resume.mandate(type='file', name='resume', accept='.doc, .docx,.ppt, .pptx,.txt,.pdf', data-valid-type='nEmpty', data-error-text='Please select file in .pdf, .doc, .docx', placeholder='Select CV/Resume')
+                    a.input-group-addon.btn.btn-default.fileinput-exists(href='#', data-dismiss='fileinput') Remove
+            .modal-footer
+              button.btn.btn-white.close-form(type='button', data-dismiss='modal') Close
+              button.btn.btn-primary(type='submit') Send
+
+    .inner-header-area    
+      .container 
+        .row
+          .col-lg-6.col-md-5
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true") 
+            .lala-header-menu 
+              ul
+                li
+                  a(href="/#about") about
+                li
+                  a(href="/#lala-feture") services
+                li
+                  a(href="/#team") team 
+                li
+                  a(href="/media") media
+                li
+                  a(href="#") faq
+                li
+                  a(href="/exchangelisting") exchanges
+                li
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li>
+        // End row
+      // End container
+    // End lala-header-area
+    //#wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               i.fa.fa-telegram.icon-padd
+               span.tele.count 7,916 
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               i.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               i.fa.fa-medium.icon-padd
+               span#medium.count 186 
+    #top-header(style='background-image: url(images/privacy-policy-banner.png)') 
+      .banner-content
+        h1 CAREERS
+        .banner-description Current Job Opening
+    #careers   
+      .container
+        .row
+          .col-md-12 
+            .panel-body
+              #accordion.panel-group
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseChain', aria-expanded='true')
+                      h3.panel-title
+                        | Senior Blockchain Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseChain.panel-collapse.collapse.show(aria-expanded='true', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  02
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  5+ ( 2+ years Experience in Blockchain Technology)
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Any Specialization, M.Tech - Any Specialization, B.Sc/M.Sc - Computer Science, BCA/MCA.
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  NodeJS, Python, Golang, Web3.js, Ethereum, Hyberledger, Blockchain algorithms, Software Architecture.
+                      .row 
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Contribute to architecture, design, and implementation of a blockchain environment including but not limited to the consensus layer, distributed ledger, and smart contracts layer. This could include dealing with the data layer, security layer, or distributed network layer.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Worked on technologies like Bitcoin, Hyperledger, Ethereum, Digital ledger,stellar,etc.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have a deep understanding of ledgers, consensus methods, blockchains.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong concepts in Data Structures & Algorithm of Blockchain, Bitcoin, Ethereum etc.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Needs to have sound knowledge of the fundamentals of cryptographyand Encryption techniques used in Blockchain.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience working in an Agile development environment.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience in Blockchain Architecture.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                            .clearfix 
+                .panel.panel-default 
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseBlk', aria-expanded='false')
+                      h3.panel-title
+                        | Junior Blockchain Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseBlk.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  03
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  1+ ( Minimum 6 months Experience in Blockchain Technology)
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Computer Science/Information Technology/Software, M.Tech - Computer Science/Information Technology/Software, B.Sc/M.Sc - Computer Science, BCA/MCA.
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  NodeJS/Golang/Solidity/Python.
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have minimum of 6 months work experience in building blockchain application.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Added advantage if performed POC’s, client presentations on Blockchain.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Worked on anyone technologies like Bitcoin, Stellar, Ripple, Hyperledger, Ethereum.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong concepts in Data Structures and Design Algorithms.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Comfortable with Linux Environment.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience in using Truffle and other toolchains to develop dApp is a huge bonus.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default 
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseOpr', aria-expanded='false')
+                      h3.panel-title
+                        | Head of Operations
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseOpr.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  10-15 years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Bachelor Degree (BE/B.Tech)MBA Degree from Tier-1 College (Preferable)
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |   Managing Operations,  Marketing Operations, Settlement, Account maintenance etc. Process development/creation of SOP, drive Quality initiatives, Customer experience and Stakeholder management
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Efficiently manage all operations activities like payments, Marketing operations), settlement, account maintenance etc.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Understand the technical, commercial terms and conditions and the operational scope of work with vendors and service providers and ensure that the services are delivered to consumers in line with the contractual commitments and within budgets.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Chalk out or improve operational systems, processes and best practices that guarantee organizational well-being.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |   Manage Customer experience and quality framework of operation for qualitative delivery.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Manage and motivate teams for effective performance management.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Stakeholder management for smooth delivery of programs and products. Comply with regulatory and audit guidelines.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  -Managing outsourced agencies and ensuring that they deliver on agreed SLA's and quality expectations. Identify gaps and continuously interact with vendors to improve overall delivery standards.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Coordinate with vendors, customers and internal teams to ensure timely settlements and excellent customer relations and minimize escalations.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Monitor real time service levels and schedule adherence of vendors and operating staff and define the mechanism for tracking of the same.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Perform ad-hoc analysis and reports based on business needs.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Point of contact for escalated tickets which require resolution of a supervisory nature or complex problems.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Lead cross functional teams using strong planning and organizational skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Recruit, train, appraise and supervise the team members on Quality policies, procedures and KRAs
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapsehead', aria-expanded='false')
+                      h3.panel-title
+                        | Head of Department - Strategic Alliances
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapsehead.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  10-15 years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  MBA
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  Core knowledge of capital markets and financial instruments, Client interaction skills, Strategic relationship building skills, Research-orientation and analytical skills
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Researching and Implementing Business Strategy: To envision and implement business strategy in India, including segments, strategies, product mix.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Responsible for generating, managing, and executing some of Company's B2B alliance activities both on the assets (Lending partnerships) and liabilities (Syndication and Fund raising). This includes managing relationships and assisting for deals that are unconventional in nature.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Help develop Strategic Alliances: Developing strategic partnerships(Lending partnerships) with financial services and technology vendors to make joint offerings for the execution services business.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  End-to-end management of investor relationships, including on-boarding, query resolution, and investor communication.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Geographic Expansion of Business Operations: Expanding presence internationally, across both the buy-side and sell-side, in Asia and Middle East.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ad-hoc Research & Analysis: Providing support to the senior management team in business development through extensive research, analysis, and financial modeling.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong candidates should have demonstrated experience and successful track record in building businesses across organizations. Strong educational pedigree, strong co-curricular performance, and knowledge of capital markets in India are pre-requisites for this role.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Core knowledge of capital markets and financial instruments.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong finance skills - good understanding of accounting and valuation.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent client interaction skills and strategic relationship building skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Curiosity and the urge to explore and be on the look-out for new business opportunities.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent communication skills as the candidate will interact with - C- level executives.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Research-orientation and analytical skills are a must.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Creativity is critical as the candidate will be authoring market collateral frequently.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapsecre', aria-expanded='false')
+                      h3.panel-title
+                        | Credit Analyst
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapsecre.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  At least 3 -4 years of work experience in the retail/SME lending function of a bank or NBFC
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  MBA in finance/ CA with a strong knowledge in Finance
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  Build and design credit models,  scores for various retail based lending products (SME, MSME , MFI ), Help draft policies , processes, manuals, Provide inputs to analytics team and lead in house development of loan disbursement and management systems
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Works closely with the Credit , Origination and Operations/Tech teams.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  To effectively communicate the credit models o the team and ensure all documentation relating to the same.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Have the ability to assist origination team for origination efforts when workflow so demands
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good communication and presentation skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  High on integrity & confidentiality.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Leadership & People Management.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Entrepreneurial and Independent worker . Keen to be a part of a growing credit business from the ground up.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Team Members: Support and communicate with the team.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong understanding of key regulations (RBI, SEBI etc).
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Understand digital lending norms, trends and implementations.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good Market Knowledge.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good excel and documentation skills.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='false')
+                      h3.panel-title
+                        | Senior PHP Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseOne.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  02
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  4+ Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Any
+                              |                                                         Specialization, B.Sc - Any Specialization, B.Com - Commerce,B.A
+                              |                                                         - Any Specialization, BCA - Computers, B.B.A / B.M.S -
+                              |                                                         Management, M.Tech - Any Specialization, MCA - Computers,
+                              |                                                         MBA/PGDM - Any Specialization, PG Diploma - Any Specialization,
+                              |                                                         M.Ed - Education
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  PHP, Javascript,
+                              |                                                         HTML, CSS, jQuery, REST APIs, JSON, Codeigniter, Laravel, Cake
+                              |                                                         PHP and OOPS Concepts.
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Must have at least +3
+                                    |                                                                     years relevant experience in PHP technology
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Must have experience in
+                                    |                                                                     php frameworks like CI, cake php, laravel, symphony
+                                    |                                                                     etc
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have strong coding
+                                    |                                                                     skills on core php
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good in database
+                                    |                                                                     designing. Good in written MySQL queries
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Have worked individually
+                                    |                                                                     on HTML ,CSS and jQuery
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Integration of payment
+                                    |                                                                     gatways, social SDK will add advantages to them
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have basic
+                                    |                                                                     knowledge of an oops concept
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent communication,
+                                    |                                                                     self-motivator, team player, ability to solve
+                                    |                                                                     complex problems, design and requirements
+                                    |                                                                     documentation
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Awareness of performance
+                                    |                                                                     issues and optimization techniques in web
+                                    |                                                                     technologies desired
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false')
+                      h3.panel-title
+                        | Junior PHP Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseTwo.panel-collapse.collapse(aria-expanded='false', style='height: 0px;')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  03
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  1-3 Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Any
+                              |                                                         Specialization, B.Sc - Any Specialization, B.Com - Commerce,B.A
+                              |                                                         - Any Specialization, BCA - Computers, B.B.A / B.M.S -
+                              |                                                         Management, M.Tech - Any Specialization, MCA - Computers,
+                              |                                                         MBA/PGDM - Any Specialization, PG Diploma - Any Specialization,
+                              |                                                         M.Ed - Education
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  PHP, Javascript,
+                              |                                                         HTML, CSS, jQuery, REST APIs, JSON, Codeigniter, Laravel, Cake
+                              |                                                         PHP and OOPS Concepts.
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven software
+                                    |                                                                     development experience in Core PHP and Codeigniter
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Must have experience in
+                                    |                                                                     php frameworks like CI, cake php, laravel, symphony
+                                    |                                                                     etc
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  At least 1 year of
+                                    |                                                                     experience in professional Web Development
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good in database
+                                    |                                                                     designing. Good in written MySQL queries
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Have worked individually
+                                    |                                                                     on HTML ,CSS and jQuery
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Integration of payment
+                                    |                                                                     gatways, social SDK will add advantages to them
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseIo', aria-expanded='false')
+                      h3.panel-title
+                        | IOS Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseIo.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  02
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  4-8 Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Bachelor Degree (BE/B.Tech) Master’s Degree (M.Tech)
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  Objective c, ipad, xcode, ios, iphone, core data, ios development, restful and git
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  To develop mobile apps for the iPhone OS for iPhone, iPad and iPod Touch devices.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Build web services to serve data to the iPhone apps.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Build great user experiences on the iPhone OS to enhance the usability appeal of the apps.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Continue to explore new APIs and always be on the leading edge of the iPhone OS releases.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Create POCs.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Communicate with the clients directly on daily project status, risks and future project cycles.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Implement creative app ideas for the app store.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseA', aria-expanded='false')
+                      h3.panel-title
+                        | Android Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseA.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  02
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  3-8 Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Any
+                              |                                                         Specialization, B.Sc - Any Specialization, B.Com - Commerce,B.A
+                              |                                                         - Any Specialization, BCA - Computers, B.B.A / B.M.S -
+                              |                                                         Management, M.Tech - Any Specialization, MCA - Computers,
+                              |                                                         MBA/PGDM - Any Specialization, PG Diploma - Any Specialization,
+                              |                                                         M.Ed - Education
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  XML, SQLite, Android Studio, Cordova, Web Services
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Design and build advanced applications for the Android platform.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Collaborate with cross-functional teams to define, design, and ship new features.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Work with outside data sources and API’s.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good optimisation and debugging skills
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience with version control (SVN) .
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Deep technical knowledge of Android application development.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proficient in java with experience in memory management and caching
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  mechanisms specific to mobile devices and embedded systems.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong UI design exposure and experience in  making apps work intuitively.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapsetech', aria-expanded='false')
+                      h3.panel-title
+                        | Technical Project Manager
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapsetech.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  2 to 3 years of SW Project Management or Scrum Master experience. Overall experience of 5+ years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Bachelor Degree (BE/B.Tech)MBA Degree from Tier-1 College (Preferable)
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |                                                     Qualified PMQ-L1, CSM or SaFe or PSM or PMI ACP certified, PMP or PMQ-L2 is added advantage, Scrum Master experience
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have successfully handled at least 2 complete life cycle project in the role of a Scrum Master or Project Manager.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have knowledge of Scrum ceremonies.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have demonstrated servant leadership.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong process management, project management and team handling skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Willingness to provide hands on guidance to the project teams as part of steering the projects forward.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent Communication and Interpersonal skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience in Fintech domain.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good Analytical, Presentation and Communication skills (oral & written)
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good Customer Interaction skills
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Traceability management, Risk management
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Perform risk management to minimize project risks
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Establish and maintain relationships with third parties/vendors
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Remove impediments and resolve conflicts. Radiate the information to ensure transparency.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapsebdm', aria-expanded='false')
+                      h3.panel-title
+                        | Business Development Manager
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapsebdm.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  08-11 Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Bachelor Degree (BE/B.Tech)MBA Degree from Tier-1 College (Preferable)
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |                                                     Knowledge of Blockchain and/or  Knowledge of finance/trading.
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Large scale consulting experience and managing teams in a consulting environment or at high tech companies.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  The ability to develop technology solutions and value adding propositions and take these to market.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong knowledge of technology trends across IT and digital and how they can be applied to companies to address real world problems and opportunities.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Leading proof of concept and/or pilot implementations and defining the plan to scale implementations across multiple technology domains
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Exceptional interpersonal and presentation skills - ability to convey technology and business value propositions to senior stakeholders.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Team oriented and collaborative working style, both with clients and those within the organization.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Capacity to develop high impact thought leadership that articulates a forward thinking view of the market.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ability to develop and maintain strong internal and client relationships.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven track record in working creatively and analytically in a problem-solving environment.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven success in contributing to a team-oriented environment with effective consulting skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven track record to quickly understand the key value drivers of a business, how they impact the scope and approach of the engagement.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Demonstrated ability to develop younger talent and build a high performing team.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Flexibility to accommodate client travel requirements.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapsebde', aria-expanded='false')
+                      h3.panel-title
+                        | Business Development Executive
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapsebde.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  02
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  3 - 5 Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Bachelor Degree (BE/B.Tech)MBA Degree from Tier-1 College (Preferable)
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |   Knowledge of Blockchain and/or  Knowledge of finance/trading.
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Large scale consulting experience and managing teams in a consulting environment or at high tech companies.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  The ability to develop technology solutions and value adding propositions and take these to market.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong knowledge of technology trends across IT and digital and how they can be applied to companies to address real world problems and opportunities.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Leading proof of concept and/or pilot implementations and defining the plan to scale implementations across multiple technology domains.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Exceptional interpersonal and presentation skills - ability to convey technology and business value propositions to senior stakeholders.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Team oriented and collaborative working style, both with clients and those within the organization.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Capacity to develop high impact thought leadership that articulates a forward thinking view of the market.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ability to develop and maintain strong internal and client relationships.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven track record in working creatively and analytically in a problem-solving environment.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven success in contributing to a team-oriented environment with effective consulting skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proven track record to quickly understand the key value drivers of a business, how they impact the scope and approach of the engagement.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Demonstrated ability to develop younger talent and build a high performing team.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Flexibility to accommodate client travel requirements.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseG', aria-expanded='false')
+                      h3.panel-title
+                        | Graphics Designer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseG.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  3-4 years of experience in a design, branding or in-house studio or an agency
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Degree in graphic design (B.F.A., M.F.A., or equivalent) is good to have though we are not big on degrees
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  Photoshop, illustrator, Flash, HTML5 and CSS3
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Create design concepts that are consistent with brand strategy and communications goals. Extend brand visuals to new verticals and platforms as needed.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Communication design for any of the media - e-mailers, banners, promotionals, social handles like facebook, twitter etc
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Create user flows & visual design of landing pages for websites/apps
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Coordinate schedules and project deliverables with project managers and other team members.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Maintain graphic resource and information systems.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Solid knowledge of design systems and templates, grid structures, layout principles, colour theory and information design.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent design and typography skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ability to synthesize information from multiple sources into clear and compelling visual solutions
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Working knowledge of Adobe Dreamweaver, HTML and flash is an added advantage
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Basic understanding of consumer websites an advantage
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ability to work under deadlines and pressure
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseF', aria-expanded='false')
+                      h3.panel-title
+                        | NodeJs Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseF.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  03
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  3+ Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Any Specialization, M.Tech - Any Specialization, B.Sc/M.Sc - Computer Science, BCA/MCA.
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              | HTML5, CSS3, Node JS, Express JS, Angular JS,React JS, REST API, Babel, Webpack and NPM.
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong proficiency with JavaScript and creating Restful API and MVC model.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Knowledge of Node.js and frameworks available for Express, React and Angular.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Knowledge of Design Pattern and Blockchain is an added advantage.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Understanding the nature of asynchronous programming and its quirks and workarounds
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good understanding of server-side templating languages EJS and standard security practices.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Basic understanding of front-end technologies, such as HTML5, and CSS3.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience with common front-end development tools such as Babel, Webpack, NPM, etc.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  User authentication and authorization between multiple systems, servers, and environments
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Integration of multiple data sources and databases into one system.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Understanding fundamental design principles behind a scalable application
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Understanding differences between multiple delivery platforms, such as mobile vs. desktop, and optimizing output to match the specific platform
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Creating database schemas that represent and support business processes.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Implementing automated testing platforms and unit tests.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Proficient understanding of code versioning tools, such as Git.
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseI', aria-expanded='false')
+                      h3.panel-title
+                        | Front End/UI Developer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseI.panel-collapse.collapse(aria-expanded='false', style='')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  3+ Years
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  B.Tech/B.E. - Any
+                              |                                                         Specialization, B.Sc - Any Specialization, B.Com - Commerce,B.A
+                              |                                                         - Any Specialization, BCA - Computers, B.B.A / B.M.S -
+                              |                                                         Management, M.Tech - Any Specialization, MCA - Computers,
+                              |                                                         MBA/PGDM - Any Specialization, PG Diploma - Any Specialization,
+                              |                                                         M.Ed - Education
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              | HTML5, CSS3, JS, JQUERY, Angular JS 2, Bootstrap, JSON, AJAX, REST API and Photoshop
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Strong experience in front-end design and development minimum 3+ Year.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Should have excellent Knowledge of HTML5, CSS3, JS,  Bootstrap, Responsive design, Dreamweaver, adobe Photoshop etc.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good knowledge of JQUERY, REACT, JS , Angular.  Node Added advantage.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Candidate should be handy with layout designing as well
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent English Communication Skills.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  In-depth knowledge of HTML5 and CSS3 and JavaScript
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience with user interface design patterns and standards
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ability to prototype in Angular JS with CSS is a plus
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good eye for aesthetics: layout, grid systems, color theory and typography
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Candidate must be in sync with recent design standards and trends
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+    //
+      <div class="panel panel-default">
+      <div class="panel-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseT" aria-expanded="false">
+      <h3 class="panel-title">
+      Software QA Engineer/Tester
+      <i class="indicator fa fa-angle-down  pull-right"></i>
+      </h3>
+      </a>
+      </div>
+      <div id="collapseT" class="panel-collapse collapse" aria-expanded="false" style="">
+      <div class="panel-body">
+      <div class="row">
+      <div class="col-lg-12">
+      <ul class="list-group">
+      <li class="list-group-item"><b style="font-weight:400">Job type:</b> Full time</li>
+      <li class="list-group-item"><b style="font-weight:400">Position type:</b> On Company Payroll ( Immediate Joiner Preferred<span style="color: red">*</span> )
+      </li>
+      <li class="list-group-item"><b style="font-weight:400">Vacancies:</b> 01</li>
+      <li class="list-group-item"><b style="font-weight:400">Minimum experience:</b> 2+ Years</li>
+      <li class="list-group-item"><b style="font-weight:400">Education:</b> A degree in computer science or a related field
+      </li>
+      <li class="list-group-item"><b style="font-weight:400">Key Skills: </b>Functional, Regression, Integration, Security, and Stress Testing, Automation Tool, QA Methodologies, Tools, and Processes
+      </li>
+      </ul>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-lg-12">
+      <div id="application_form">
+      <div id="application_holder" class="application-form fx_height topspace-double">
+      <div class="row">
+      <h3 class="application-form-title bottomspace">Job
+      Description</h3>
+      <ul class="mrg-t10">
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Review requirements and technical design documents to provide timely and meaningful feedback
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Create detailed, comprehensive and well-structured test plans and test cases
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Estimate, prioritize, plan, and coordinate testing activities
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i>  Design, develop and execute automation scripts using open source tools
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Identify, record, document and track bugs to resolution
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Integral part of deployment team, including deployment planning and testing;
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Solid knowledge of SQL and scripting
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Experience working in an Agile/Scrum development process and with Agile tools.
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Follow incident, problem, crisis and change management processes
+      </li>
+      <li><i class="fa fa-arrow-circle-right cl-st" aria-hidden="true"></i> Ability to organize and prioritize workload in order to meet necessary deadlines.
+      </li>
+      </ul>
+      </div>
+      <div class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">Apply</div>
+      <div class="clearfix"></div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapsedigi', aria-expanded='false')
+                      h3.panel-title
+                        | Digital Marketing Executive
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapsedigi.panel-collapse.collapse(aria-expanded='false')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  02
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  1-3 Year
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Any
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  Email marketing campaigns, Search Engine Optimization, social media strategy, Sales and Marketing, Digital Marketing
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Develop and manage digital marketing campaigns.
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Oversee a social media strategy
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Manage and maintain the organisations website(s)
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Write and optimize content for the website and social networking accounts such as Facebook and Twitter
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Track and analyse website traffic flow and provide regular internal reports
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Attain key performance indicators such as reducing the website bounce rate, increasing dwell time or improving conversion
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Continually work on the Search Engine Optimization of the website(s)
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Fix any errors or bugs in online content
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Edit and post videos, podcasts and audio content to online sites
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Create online banner adverts and oversee pay per click (PPC) ad management
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Write copy for email marketing campaigns
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Identify new trends in digital marketing, evaluate new technologies and ensure the brand is at the forefront of industry developments, particularly developments in
+                                    | mobile marketing
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                            .clearfix
+                .panel.panel-default
+                  .panel-heading
+                    a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false')
+                      h3.panel-title
+                        | Content Writer
+                        i.indicator.fa.fa-angle-down.pull-right
+                  #collapseThree.panel-collapse.collapse(aria-expanded='false')
+                    .panel-body
+                      .row
+                        .col-lg-12
+                          ul.list-group
+                            li.list-group-item
+                              b(style='font-weight:400') Job type:
+                              |  Full time
+                            li.list-group-item
+                              b(style='font-weight:400') Position type:
+                              |  On Company Payroll ( Immediate Joiner Preferred
+                              span(style='color: red') *
+                              |  )
+                            li.list-group-item
+                              b(style='font-weight:400') Vacancies:
+                              |  01
+                            li.list-group-item
+                              b(style='font-weight:400') Minimum experience:
+                              |  0-1 Year
+                            li.list-group-item
+                              b(style='font-weight:400') Education:
+                              |  Any
+                            li.list-group-item
+                              b(style='font-weight:400') Key Skills: 
+                              |  Proficiency in
+                              |                                                         English Writing, Content Writing, Copy Writing, Digital
+                              |                                                         Markrting, Articles, Corporate Communication and Writing Skills
+                      .row
+                        .col-lg-12
+                          #application_form
+                            #application_holder.application-form.topspace-double
+                              .row
+                                h3.application-form-title.bottomspace
+                                  | Job
+                                  | Description
+                                ul.mrg-t10
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Excellent written and
+                                    |                                                                     verbal communication skills
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Familiarity with writing
+                                    |                                                                     for the web (scannable writing)
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Curate and write
+                                    |                                                                     articles/stories around social/trending, viral
+                                    |                                                                     content & news
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Typing in the particular
+                                    |                                                                     language without spelling mistakes
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  High level of proficiency
+                                    |                                                                     in MS Office
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Good understanding of
+                                    |                                                                     content creation - would be a plus
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Experience in digital
+                                    |                                                                     marketing will be an added advantage
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Willingness to work in a
+                                    |                                                                     fast-paced environment
+                                  li
+                                    i.fa.fa-arrow-circle-right.cl-st(aria-hidden='true')
+                                    |  Ability to work
+                                    |                                                                     independently and deliver high quality work within
+                                    |                                                                     short timelines
+                              .btn.btn-primary.pull-right(data-toggle='modal', data-target='#myModal') Apply
+                              .clearfix
+                            .clearfix
+    // End for JD 3
+    // Start for JD 4
+    // End for JD 4
+
+
+    
+     

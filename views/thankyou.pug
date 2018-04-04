@@ -1,0 +1,22 @@
+extends layout
+
+block content
+ html
+  body
+    table.main(height='600', border='0', align='center', cellspacing='0', cellpadding='0', bgcolor='#fff')
+      tr
+        td.table-bord(align='center')
+          table(width='800', border='0', cellspacing='0', cellpadding='0')
+            tr
+              td.td-bord(align='center')
+                a(href='#', target='_blank')
+                  img(src='images/logo-thanku.png', width='165', height='122', border='0')
+            tr
+              td.thank_you(align='center') Thank You For Subscribing!
+            tr
+              td.token-btn-bord(align='center')
+                a.token-btn(href='/')
+                  span
+                    img(src='images/arrow-right.png')
+                  |  Back to home
+

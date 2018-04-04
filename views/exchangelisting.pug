@@ -1,0 +1,119 @@
+extends layout
+
+block content
+ html
+  body
+    .inner-header-area    
+      .container 
+        .row
+          .col-lg-6.col-md-5 
+            .lala-header-logo
+              a(href="/")
+                img.logo-img(src="images/logo.png" alt="Lalaworld-logo") 
+          .col-lg-6.col-md-7
+            .menu-toggle.fa
+              //i.fa.fa-bars(aria-hidden="true") 
+            .lala-header-menu 
+              ul
+                li
+                  a(href="/#about") about
+                li
+                  a(href="/#lala-feture") services
+                li
+                  a(href="/#team") team 
+                li
+                  a(href="/media") media
+                li
+                  a(href="#") faq
+                li
+                  a(href="/exchangelisting") exchanges
+                li
+                  a(href="https://blog.lalaworld.io/" target="_blank") blog
+                // <li><a href="#lala-contact">contact</a></li>
+        // End row
+      // End container
+    // End lala-header-area
+    //#wrapperLALA.row.social-side 
+     .col-sm-12
+       ul.list-unstyled1
+         li.clearfix
+           a(target='_blank' href='https://www.facebook.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-facebook.icon-padd
+               span#facebook.count 54,915
+         li.clearfix
+           a(target='_blank' href='https://twitter.com/MyLaLaWorld')
+             .social-icon1
+               i.fa.fa-twitter.icon-padd
+               span#twitter.count 9,506
+         li.clearfix
+           a.item.telegram(target='_blank' href='https://t.me/LaLaWorld')
+             .social-icon1
+               i.fa.fa-telegram.icon-padd
+               span.tele.count 7,916 
+         li.clearfix
+           a.item.linkedin(target='_blank' href='https://www.linkedin.com/in/MyLaLaWorld/')
+             .social-icon1
+               i.fa.fa-linkedin.icon-padd
+               span#link.count 3,119
+         li.clearfix
+           a.item.medium(target='_blank' href='https://medium.com/lala-world')
+             .social-icon1
+               i.fa.fa-medium.icon-padd
+               span#medium.count 186 
+    #top-header(style='background-image: url(images/privacy-policy-banner.png)') 
+      .banner-content
+        h1 Our Exchanges
+        .banner-description.btn-mar-bottom
+        a(target='_blank' href='https://t.me/LaLaWorld')
+          span.clr
+            | Join our telegram channel: 
+            span.fa.fa-telegram 
+    .container
+      .row.container-main.privac_con
+        .col-md-12
+          .pricing-plans
+            .wrap
+              .pricing-grids
+                .col-lg-4.col-md-12.col-sm-12.col-xs-12.pricing-grid1
+                  a(href='https://exchange.coss.io/exchange/lala-eth' target='_blank')
+                    .price-value.two
+                     img.nw-st1(src='https://lalaworld.io/public/skin/images/exchamge-logo/logo-beta.png' alt='LALA World Exchange')
+                    .sale-box.two
+                      span.on_sale.title_shop NEW
+                  .price-bg
+                    p
+                     | LALA is now available
+                     br
+                     |  at Coss
+                  .cart2
+                    a.popup-with-zoom-anim(href='https://exchange.coss.io/exchange/lala-eth' target='_blank') Buy LALA at Coss
+                .col-lg-4.col-md-12.col-sm-12.col-xs-12.pricing-grid2
+                  a(href='https://cobinhood.com/trade/LALA-ETH' target='_blank')
+                    .price-value.three
+                     img.nw-st2(src='https://lalaworld.io/public/skin/images/exchamge-logo/cobinhood.png' alt='LALA World Exchange')
+                    .sale-box.three
+                      span.on_sale.title_shop NEW
+                  .price-bg
+                    p
+                     | LALA is now available 
+                     br
+                     |  at Cobinhood
+                  .cart3
+                    a.popup-with-zoom-anim(href='https://cobinhood.com/trade/LALA-ETH' target='_blank') Buy LALA at Cobinhood
+                .col-lg-4.col-md-12.col-sm-12.col-xs-12.pricing-grid3
+                  a(href='https://qryptos.com/' target='_blank')
+                    .price-value
+                      img.nw-st(src='https://lalaworld.io/public/skin/images/exchamge-logo/qtyptos.png' alt='LALA World Exchange')
+                    .sale-box
+                      span.on_sale.title_shop NEW
+                  .price-bg
+                    p
+                     | LALA is now available
+                     br
+                     |  at Qryptos
+                  .cart1
+                    a.popup-with-zoom-anim(href='https://qryptos.com/' target='_blank') Buy LALA at Qryptos
+              .clear  
+            .clear
+    
