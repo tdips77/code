@@ -1,0 +1,89 @@
+
+<h2>User Registration <a [routerLink]="['/users']">User List</a></h2>
+<hr>
+<form #form="ngForm" [formGroup]="userForm" (ngSubmit)="saveData(form)" class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2">Name</label>
+    <div class="col-sm-10">
+      <input type="text" name="Name" class="form-control" formControlName="Name" />
+      <div *ngIf="userForm.get('Name').errors && (form.submitted || userForm.get('Name').dirty)" class="text-danger">
+        Please Enter Name
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Username</label>
+    <div class="col-sm-10">
+      <input type="text" name="Username" class="form-control" formControlName="Username" />
+      <div *ngIf="userForm.get('Username').errors && (form.submitted || userForm.get('Username').dirty)" class="text-danger">
+        <span [hidden]="!userForm.get('Username').errors.required">Please Enter Username</span>
+        <span [hidden]="!userForm.get('Username').errors.minlength">Username must have three chars</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Email</label>
+    <div class="col-sm-10">
+      <input type="text" name="Email" class="form-control" formControlName="Email" />
+      <div *ngIf="userForm.get('Email').errors && (form.submitted || userForm.get('Email').dirty)" class="text-danger">
+        <span [hidden]="!userForm.get('Email').errors.required">Please Enter Email</span>
+        <span [hidden]="!(!userForm.get('Email').errors.required && userForm.get('Email').errors.email)">Email is not correct</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Password</label>
+    <div class="col-sm-10">
+      <input type="text" name="Password" class="form-control" formControlName="Password" />
+      <div *ngIf="userForm.get('Password').errors && (form.submitted || userForm.get('Password').dirty)" class="text-danger">
+        Please Enter Password
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Confirm Password</label>
+    <div class="col-sm-10">
+      <input type="text" name="ConfirmPassword" class="form-control" validateEqualTo="Password" formControlName="ConfirmPassword"
+      />
+      <div *ngIf="userForm.get('ConfirmPassword').errors && (form.submitted || userForm.get('ConfirmPassword').dirty)" class="text-danger">
+        <span [hidden]="!userForm.get('ConfirmPassword').errors.required">Please Enter ConfirmPassword</span>
+        <span [hidden]="!(!userForm.get('ConfirmPassword').errors.required && userForm.get('ConfirmPassword').hasError('validateEqual'))">ConfirmPassword doesn't macthed</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Country</label>
+    <div class="col-sm-10">
+      <select name="Country" class="form-control" formControlName="Country">
+        <option value="">--Select--</option>
+        <option *ngFor="let item of countries" [value]="item.id">{{item.name}}</option>
+      </select>
+      <div *ngIf="userForm.get('Country').errors && (form.submitted || userForm.get('Country').dirty)" class="text-danger">
+        Please Select Country
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Contact</label>
+    <div class="col-sm-10">
+      <input type="text" name="Contact" class="form-control" formControlName="Contact" />
+      <div *ngIf="userForm.get('Contact').errors && (form.submitted || userForm.get('Contact').dirty)" class="text-danger">
+        Please Enter Correct Mobile
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2">Accept Terms</label>
+    <div class="col-sm-10">
+      <input type="checkbox" name="Terms" formControlName="Terms" />
+      <div *ngIf="userForm.get('Terms').errors && (form.submitted || userForm.get('Terms').dirty)" class="text-danger">
+        Please Accept Terms
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10 col-sm-offset-2">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+  </div>
+</form>
