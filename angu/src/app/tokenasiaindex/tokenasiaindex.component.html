@@ -1,0 +1,53 @@
+<section class="car">
+	<div class="container-fluid" id="index">
+      <h1>Index Strategy</h1>
+	</div>
+	<div class="container-fluid job">
+	   <div class="container mg4">
+           <div class="col-md-12">
+               <h3 class="ind">Index Strategy (How it is calculated)</h3>
+               <p>The TokenAsia Index is a market-cap based index that measures the performance of the large-cap Tokensale market. The Index is currently made up of 10 members and serves as a representation for the performance of the market as a whole. It is calculated using CoinMarketCap data and updated every Tick. <a style="cursor: pointer;" class="read" (click)="ShowButton()">Read more...</a></p>
+                <div *ngIf="showSelected"> 
+                   <p>It has three components:</p>
+                   <ol>
+                       <li>Market Capital</li>
+                       <li>Price</li>
+                       <li>Volume</li>
+                   </ol>
+                   <p>Two Conditions to select the Tokens:</p>
+                   <ol>
+                       <li>Market Capital of 8.0 Billions or above.</li>
+                       <li>Daily volume of 450 Millions for the past 15 days.</li>
+                   </ol>
+                   <p>So, Total no. of shortlisted currencies on the above basis are as follows:</p>
+                   <ol>
+                       <li>Bitcoin</li>
+                       <li>Ethereum</li>
+                       <li>Ripple</li>
+                       <li>Bitcoin Cash</li>
+                       <li>Litecoin</li>
+                   </ol>
+                   <p>Index will list at 10000 points.</p>
+                   <h4>Market Capital</h4>
+                   <p>50% of the Index. In the ratio of their Market Capital. Rounded off to the lowest integer. So, Total Market Capital of above 5 Tokens = 5000 points </p>
+                   <h4>Price Points</h4>
+                   <p>Same ratio for each currency i.e 500 points each<br> Total of 2500 points.</p>
+                   <h4>Volume Points</h4>
+                   <p>Same Ratio for all the selected currencies.<br>500 points to each currency.<br>So total is 2500 Points.
+                   <h4>Calculations</h4>
+                   <p>The value of the Index is calculated on every tick value according to the ratio decrease or increase of the above components accordingly.</p>
+                </div>
+                <div class="divTable" style="width: 100%;border: 1px solid #000;" >
+                    <div class="divTableBody deepa">
+                      <p class="load-cls">Loading Result...</p>
+                    </div>
+                    
+                </div>
+               
+                    <!-- DivTable.com -->
+           </div>
+        </div> 
+    </div>
+  
+
+</section>

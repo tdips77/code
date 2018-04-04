@@ -1,0 +1,239 @@
+<section id="form">
+  <div class="upform">
+
+
+	  <form #form="ngForm" (ngSubmit)="saveData(form)" enctype="multipart/form-data" class="form-wrapper">
+
+	    <div class="upform-header"></div>
+	    <h3>1. Contact Information</h3>
+	    <div class="upform-main">
+	      <div class="input-block active">
+	        <div class="label">Hello, What is your First Name?*</div>
+	        <div class="input-control">
+	          <input type="text" name="q_name" id="q_name" class="required" #q_name="ngModel" [(ngModel)]="user.q_name" required="" autocomplete="off">
+	          <div *ngIf="q_name.errors && (form.submitted || q_name.dirty)" class="text-danger">Please Enter First Name</div>
+	          <div *ngIf="q_name.valid && q_name.dirty" class="text-success">Hmm..Looks good.</div>
+	        </div>
+	        
+	      </div>
+	      <div class="input-block">
+	        <div class="label"><span class="sname"> {{ newuser }} {{ user.q_name }},</span> your lastname?*</div>
+	        <div class="input-control">
+	          <input type="text" name="q_lastname" id="q_lastname" class="required" #q_lastname="ngModel" [(ngModel)]="user.q_lastname" required="" autocomplete="off">
+	          <div *ngIf="q_lastname.errors && (form.submitted || q_lastname.dirty)" class="text-danger">Please Enter your family/surname</div>
+	          <div *ngIf="q_lastname.valid && q_lastname.dirty" class="text-success">Hmm..Looks good.</div>
+	        </div>
+	      </div>
+	       <div class="input-block">
+	        <div class="label">Please provide your email address?*</div>
+	        <div class="input-control">
+	          <input type="text" name="q_email" id="q_email" class="required" #q_email="ngModel" [(ngModel)]="user.q_email"  required="" email autocomplete="off">
+	          <div *ngIf="q_email.errors && (form.submitted || q_email.dirty)" class="text-danger">
+
+                        <span [hidden]="!q_email.errors.required">Please Enter Email</span>
+                          <span [hidden]="!(!q_email.errors.required && q_email.errors.email)">Email is not correct</span>
+                                   
+               </div>
+               <div *ngIf="q_email.valid && q_email.dirty" class="text-success">Hmm..Looks good.</div>
+                               
+	        </div>
+
+	      </div>
+	       <div class="input-block">
+	        <div class="label">Your Mobile Number?*</div>
+	        <div class="input-control">
+	          <input type="text" name="q_phone" id="q_phone" class="required" #q_phone="ngModel" [(ngModel)]="user.q_phone" autocomplete="off" required="" maxlength="15">
+	           <div *ngIf="q_phone.errors && (form.submitted || q_phone.dirty)" class="text-danger">
+	          Please Enter Correct Mobile
+	        </div>
+	        <div *ngIf="q_phone.valid && q_phone.dirty" class="text-success">Hmm..Looks good.</div>
+		     </div>
+	      </div>
+	      
+	      <div class="input-block">
+	        <div class="label">What is your role at the company?</div>
+	        <div class="input-control">
+	          <input type="textarea" name="q_company" id="q_company" #q_company="ngModel" [(ngModel)]="user.q_company" autocomplete="off">
+	           <!-- <div *ngIf="q_company.errors && (form.submitted || q_company.dirty)" class="text-danger">Please Enter your role</div> 
+	           <div *ngIf="q_company.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+	      <h3>2. Company & Team</h3>
+	      <div class="input-block">
+	        <div class="label">What is the Company's Legal Business Name?</div>
+	        <div class="input-control">
+	          <input type="text" name="q_name_legal" id="q_name_legal" #q_name_legal="ngModel" [(ngModel)]="user.q_name_legal" autocomplete="off">
+	          <!-- <div *ngIf="q_name_legal.errors && (form.submitted || q_name_legal.dirty)" class="text-danger">Please Enter your legal business name</div>
+	           <div *ngIf="q_name_legal.dirty" class="text-success">Hmm..Looks good.</div> -->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">Where is your company headquartered?</div>
+	        <div class="input-control">
+	          <input type="text" name="q_head" id="q_head" #q_head="ngModel" [(ngModel)]="user.q_head"  autocomplete="off">
+	          <!-- <div *ngIf="q_head.errors && (form.submitted || q_head.dirty)" class="text-danger">Please tell us where is your comapny headquartered</div> 
+	           <div *ngIf="q_head.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">Have you taken any legal consultations?*</div>
+	        <div class="input-control">
+	          <input id="toggle-on-q1" class="toggle toggle-left" name="q1" value="yes" #q1="ngModel" [(ngModel)]="user.q1" required=""  type="radio">
+	          <label for="toggle-on-q1" class="btn"> Yes</label>
+	          <input id="toggle-off-q1" class="toggle toggle-right" name="q1" value="no" #q1="ngModel" [(ngModel)]="user.q1" required="" type="radio">
+	          <label for="toggle-off-q1" class="btn"> No</label>
+                
+	        </div>
+	        <div *ngIf="q1.errors && (form.submitted || q1.dirty)" class="text-danger">Please tell us developer in your company</div>
+	           <div *ngIf="q1.valid && q1.dirty" class="text-success">Hmm..Looks good.</div>
+	        
+	      </div>
+	      <div class="input-block">
+	        <div class="label">What is the total employee strength of the company?</div>
+	        <div class="input-control">
+	          <input type="text" name="q_total" id="q_total" #q_total="ngModel" [(ngModel)]="user.q_total" autocomplete="off">
+	            <!-- <div *ngIf="q_total.errors && (form.submitted || q_total.dirty)" class="text-danger">Please tell us total employee strength of the company</div> 
+	           <div *ngIf="q_total.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">How many developers do you have in your core team?</div>
+	        <div class="input-control">
+	          <input type="text" name="q_dev" id="q_dev" #q_dev="ngModel" [(ngModel)]="user.q_dev"   autocomplete="off">
+	          <!-- <div *ngIf="q_dev.errors && (form.submitted || q_dev.dirty)" class="text-danger">Please tell us developer in your company</div> 
+	           <div *ngIf="q_dev.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+
+	      
+	       <h3>3. Project Details</h3>
+	       <div class="input-block">
+	        <div class="label">Project name</div>
+	        <div class="input-control">
+	          <input type="text" name="q_project" id="q_project" #q_project="ngModel" [(ngModel)]="user.q_project" autocomplete="off">
+	          <!-- <div *ngIf="q_project.errors && (form.submitted || q_project.dirty)" class="text-danger">Please tell us developer in your company</div> 
+	           <div *ngIf="q_project.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">Project website</div>
+	        <div class="input-control">
+	          <input type="text" name="q_website" id="q_website" pattern="https?://.+" [(ngModel)]="user.q_website" #q_website="ngModel" autocomplete="off">
+	           <!-- <div *ngIf="q_website.errors && (form.submitted || q_website.dirty)" class="text-danger">
+		        <div [hidden]="!q_website.errors.required">
+		          URL is required!
+		        </div>
+		        <div [hidden]="!q_website.errors.pattern">
+		          Must be a valid URL!
+		        </div>
+		      </div>
+		      <div *ngIf="q_website.dirty" class="text-success">Hmm..Looks good.</div> -->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">Project description*</div>
+	        <div class="input-control">
+	          <input type="text" name="q_about" id="q_about" class="required" #q_about="ngModel" [(ngModel)]="user.q_about" required=""  autocomplete="off">
+	           <div *ngIf="q_about.errors && (form.submitted || q_about.dirty)" class="text-danger">Please provide this information</div>
+	           <div *ngIf="q_about.valid && q_about.dirty" class="text-success">Hmm..Looks good.</div>
+	        </div>
+	      </div>
+	     
+	    <div class="input-block">
+	        <div class="label">Do you have a White Paper?*</div>
+	        <div class="input-control">
+	         <input (click)="ShowButton()" id="toggle-on-q2" class="toggle toggle-left" name="q2" value="yeswhi" #q2="ngModel" [(ngModel)]="user.q2" required="" type="radio">
+	          <label for="toggle-on-q2" class="btn"> Yes</label>
+	          <input (click)="HideButton()" id="toggle-off-q2" class="toggle toggle-right" name="q2" value="nowhi" #q2="ngModel" [(ngModel)]="user.q2" required="" type="radio">
+	          <label for="toggle-off-q2" class="btn"> No</label>
+	         <!--  <input id="toggle-on-q2" class="toggle toggle-left" name="q2" value="yes" #q2="ngModel" [(ngModel)]="user.q2" required="" type="radio" (click)="setradio('yes')">
+	          <label for="toggle-on-q2" class="btn"><span>A</span> Yes</label>
+	          <input id="toggle-off-q2" class="toggle toggle-right" name="q2" value="no" #q2="ngModel" [(ngModel)]="user.q2" required="" type="radio" (click)="setradio('no')" >
+	          <label for="toggle-off-q2" class="btn"><span>B</span> No</label> -->
+	        </div>
+	        <!-- File upload -->
+	     <div *ngIf="showSelected">
+	        <input type="file" name="file" id="file" #file="ngModel" [(ngModel)]="user.file" accept=".pdf,.doc,.docx"/>
+	        </div>
+           <div *ngIf="q2.errors && (form.submitted || q2.dirty)" class="text-danger">Please tell us developer in your company</div>
+	           <div *ngIf="q2.valid && q2.dirty" class="text-success">Hmm..Looks good.</div>
+	          <!--<div class="input-control" id="file-input" *ngIf="isSelected('yes')">
+	           	  <input type="file" name="file" id="file" placeholder="Upload file" accept=".pdf,.doc,.docx">
+	           </div>
+	            <div *ngIf="file.errors && (form.submitted || file.dirty)" class="text-danger">Please select file</div>  -->
+	      </div>
+	     
+	      <div class="input-block">
+	        <div class="label">Do you have any project advisors?*</div>
+	        <div class="input-control">
+	          <input id="toggle-on-q3" class="toggle toggle-left" name="q3" value="yes" #q3="ngModel" [(ngModel)]="user.q3" required="" type="radio">
+	          <label for="toggle-on-q3" class="btn"> Yes</label>
+	          <input id="toggle-off-q3" class="toggle toggle-right" name="q3" value="no" #q3="ngModel" [(ngModel)]="user.q3" required="" type="radio">
+	          <label for="toggle-off-q3" class="btn"> No</label>
+	        </div>
+	         <div *ngIf="q3.errors && (form.submitted || q3.dirty)" class="text-danger">Please provide this information</div>
+	          <div *ngIf="q3.valid && q3.dirty" class="text-success">Hmm..Looks good.</div>
+
+	      </div>  
+	       <h3>4. Token Sale & Campaign</h3>
+	        <div class="input-block">
+	        <div class="label">When do you want to launch your Tokensale?</div>
+	        <div class="input-control">
+	          <input type="text" name="q_launch" id="q_launch" #q_launch="ngModel" [(ngModel)]="user.q_launch" autocomplete="off">
+	          <!-- <div *ngIf="q_launch.errors && (form.submitted || q_launch.dirty)" class="text-danger">Please provide this information</div> 
+	           <div *ngIf="q_launch.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">What is the duration of the Tokensale?</div>
+	        <div class="input-control">
+		        <select name="duration" id="duration" #duration="ngModel" [(ngModel)]="user.duration">
+			     <option value="1 year">1 year</option> 
+	            <option value="2 year">2 year</option>
+	            <option value="3 year">3 year</option>
+		        </select>
+		         <!-- <div *ngIf="duration.errors && (form.submitted || duration.dirty)" class="text-danger">Please provide this information</div> 
+	           <div *ngIf="duration.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">Do you have a Soft / Hard Cap?</div>
+	        <div class="input-control">
+	         <select name="cap" id="cap" #cap="ngModel" [(ngModel)]="user.cap">
+			    <option value="Soft Cap">Soft Cap</option> 
+	            <option value="Hard Cap">Hard Cap</option>
+		        </select>
+		       <!--   <div *ngIf="cap.errors && (form.submitted || cap.dirty)" class="text-danger">Please provide this information</div>
+	           <div *ngIf="cap.dirty" class="text-success">Hmm..Looks good.</div> -->
+	        </div>
+	      </div>
+	      <div class="input-block">
+	        <div class="label">What is your total tokensale campaign budget?</div>
+	        <div class="input-control">
+	          <input type="text" name="q_budget" id="q_budget" #q_budget="ngModel" [(ngModel)]="user.q_budget" autocomplete="off">
+	          <!-- <div *ngIf="q_budget.errors && (form.submitted || q_budget.dirty)" class="text-danger">Please tell us token sale campaign budget</div> 
+	           <div *ngIf="q_budget.dirty" class="text-success">Hmm..Looks good.</div>-->
+	        </div>
+	      </div>
+
+	      <div class="input-block">
+	        <div class="label">Comment*</div>
+	        <div class="input-control">
+	          <input type="text" name="q_comment" id="q_comment" class="required" #q_comment="ngModel" [(ngModel)]="user.q_comment" required="" autocomplete="off">
+	          <div *ngIf="q_comment.errors && (form.submitted || q_comment.dirty)" class="text-danger">Please provide this information</div>
+	           <div *ngIf="q_comment.valid && q_comment.dirty" class="text-success">Hmm..Looks good.</div>
+	        </div>
+	      </div>
+
+	    </div>
+
+	    <div class="upform-footer">
+	      <button type="submit" id="test" class="btn btn-primary btn-lg">Submit </button>
+	    </div>
+
+	  </form>
+
+
+</div>
+	
+</section>

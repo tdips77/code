@@ -1,0 +1,110 @@
+<section id="contact" class="contact contact-section">
+ <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-headline">
+                    <h3 class="wow fadeIn animated">Contact <span>us</span></h3>
+                  <!--   <p class="wow fadeIn animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+                        odio. Praesent libero. Sed
+                        cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis
+                        ipsum. Praesent mauris.</p> -->
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-header">Our office <span>info</span></p>
+                        <div class="info-line">
+                            <div class="info-icon wow fadeIn animated">
+                                <i class="fa fa-envelope-o primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-text wow fadeIn animated">
+                                <p>hello@tokenasia.com</p>
+                            </div>
+                        </div>
+                        <div class="info-line">
+                            <div class="info-icon wow fadeIn animated">
+                                <i class="fa fa-phone primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-text wow fadeIn animated">
+                                <p>+65 9337 9739</p>
+                            </div>
+                        </div>
+
+                        <div class="info-line">
+                            <div class="info-icon wow fadeIn animated">
+                                <i class="fa fa-map-marker primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="info-text wow fadeIn animated">
+                                <p>Singapore | Malaysia | Dubai | India | Toronto | Seoul | New York</p>
+                            </div>
+                        </div>
+
+                        <div class="bottom-info">
+                            <h4 class="wow fadeIn animated"><span>Connect</span> with us</h4>
+
+                            <ul class="list-inline social-icons wow fadeIn animated">
+                                <li>
+                                    <a href="https://www.facebook.com/Tokenasia/" class="primary-2-back primary-back-hover">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/TokenAsia" class="primary-2-back primary-back-hover">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/tokenasia/" class="primary-2-back primary-back-hover">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/tokenasia/" class="primary-2-back primary-back-hover">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://medium.com/@TokenAsia" class="primary-2-back primary-back-hover">
+                                        <i class="fa fa-medium" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- <p class="wow fadeIn animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h4 class="wow fadeIn animated">Send us a <span>Message</span></h4>
+                        <form #form="ngForm" (ngSubmit)="saveData(form);  myNgForm.resetForm();">
+                            <div class="form-group wow fadeIn animated">
+                                <label for="name">Name: </label>
+                                <input type="text" name="name" class="form-control" #Name="ngModel" [(ngModel)]="user.name" required/>
+                                  <div *ngIf="Name.errors && (form.submitted || Name.dirty)" class="text-danger">
+                                    Please Enter Name
+                                  </div>
+                            </div>
+                            <div class="form-group wow fadeIn animated">
+                                <label for="email">Email: </label>
+                                <input type="text" name="email" class="form-control" #Email="ngModel" [(ngModel)]="user.email" required email/>
+                                  <div *ngIf="Email.errors && (form.submitted || Email.dirty)" class="text-danger">
+                                    <span [hidden]="!Email.errors.required">Please Enter Email</span>
+                                    <span [hidden]="!(!Email.errors.required && Email.errors.email)">Email is not correct</span>
+                                  </div>
+                            </div>
+                            <div class="form-group wow fadeIn animated">
+                                <label for="message">Message: </label>
+       
+                                <textarea id="message" name="message" class="form-control" rows="4" #Contact="ngModel" [(ngModel)]="user.contact"></textarea>
+                                 
+                            </div>
+
+                            <button class="btn btn-default wow fadeIn primary-back-hover primary-hover-border animated" type="submit">Submit </button>
+
+                            <div class="showmsg" style="display: none;">Your qurey has been submit successfully.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
