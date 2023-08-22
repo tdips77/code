@@ -1,4 +1,4 @@
-## *Lalaworld NodeJS Source Code*
+## *= NodeJS Source Code*
 This is the NodeJS repo of Lalaworld.io.
 
 Steps to Run the Web Application
